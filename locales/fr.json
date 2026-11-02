@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "title": "Traiteur & décoration de mariage dans le Vaucluse, les Bouches-du-Rhône et l'Hérault | Sud Events",
+    "description": "Sud Events, traiteur, décorateur et loueur de matériel pour mariages orientaux et mixtes à Avignon, Marseille, Aix-en-Provence et Montpellier (84, 13, 34). Demandez votre devis.",
+    "legalTitle": "Mentions légales | Sud Events",
+    "legalDescription": "Mentions légales et données personnelles du site Sud Events, traiteur et décoration de mariage."
+  },
+  "nav": {
+    "traiteur": "Traiteur",
+    "decoration": "Décoration",
+    "location": "Location",
+    "realisations": "Réalisations",
+    "avis": "Avis",
+    "contact": "Contact",
+    "quote": "Demander un devis",
+    "quoteShort": "Devis",
+    "menu": "Menu",
+    "close": "Fermer le menu",
+    "home": "Sud Events, accueil",
+    "language": "Langue",
+    "skip": "Aller au contenu"
+  },
+  "intro": {
+    "skip": "Passer"
+  },
+  "hero": {
+    "eyebrow": "Traiteur · Décoration · Location — 84 / 13 / 34",
+    "title": "Votre mariage, du premier plat à la dernière bougie",
+    "cta": "Demander un devis",
+    "whatsapp": "WhatsApp",
+    "scroll": "Découvrir",
+    "alt": "Canapé des mariés blanc et or devant un rideau de voilages éclairé de bougies, décoration Sud Events"
+  },
+  "manifesto": {
+    "eyebrow": "La maison",
+    "title": "Un traiteur et un décorateur, réunis sous un même nom.",
+    "text": "Chez Sud Events, la cuisine et la décoration se pensent ensemble. Les couleurs de la salle répondent aux plats, les centres de table laissent la place aux plateaux, et une seule équipe veille sur tout, de l'installation au dernier service. Le jour J, vous n'avez qu'un interlocuteur, et tout est cohérent.",
+    "link": "Nos trois métiers"
+  },
+  "trades": {
+    "eyebrow": "Nos métiers",
+    "title": "Trois savoir-faire, un seul jour J",
+    "items": [
+      {
+        "id": "traiteur",
+        "name": "Traiteur",
+        "text": "Buffets de fruits sculptés, salades composées, verrines, mignardises, pièces montées et plats servis à table par nos serveurs."
+      },
+      {
+        "id": "decoration",
+        "name": "Décoration",
+        "text": "Arches de fleurs blanches, chandeliers, bougies, trône des mariés et panneaux à vos prénoms : la salle prend vos couleurs."
+      },
+      {
+        "id": "location",
+        "name": "Location de matériel",
+        "text": "Chaises, nappage, vaisselle dorée, chandeliers, arches et présentoirs, à louer seuls ou avec nos prestations."
+      }
+    ],
+    "more": "Découvrir"
+  },
+  "traiteur": {
+    "eyebrow": "001 — Traiteur",
+    "title": "Une table généreuse, pensée comme un décor",
+    "text": "Nos buffets se voient avant de se goûter : fruits sculptés, plats sous cloche argentée, effets de fumée à l'arrivée des plateaux. Cuisine orientale et cuisine du Sud, salé comme sucré, nous composons le menu avec vous selon vos invités et votre façon de recevoir.",
+    "specialties": [
+      {
+        "name": "Buffets de fruits",
+        "text": "Fruits frais sculptés et dressés en cascade, pour un final tout en couleurs."
+      },
+      {
+        "name": "Buffets salés",
+        "text": "Salades composées, pastillas aux fruits de mer, feuilletés, mini-pizzas et pâtes fraîches."
+      },
+      {
+        "name": "Verrines & mignardises",
+        "text": "Verrines, tartelettes, macarons, brownies et douceurs à picorer."
+      },
+      {
+        "name": "Pièces montées & gâteaux",
+        "text": "Pièces montées et gâteaux de fête, présentés au moment fort de la soirée."
+      },
+      {
+        "name": "Plats servis à table",
+        "text": "Poulet aux olives et aux amandes, tajines, plats en sauce servis sous cloche."
+      },
+      {
+        "name": "Service avec serveurs",
+        "text": "Une équipe en salle pour le service à table, l'arrivée des plateaux et le buffet."
+      }
+    ],
+    "service": {
+      "script": "Service",
+      "title": "Le service, en salle",
+      "text": "Nos serveurs portent les plats jusqu'aux tables, sous cloche argentée ou dans un nuage de fumée, et veillent sur le buffet jusqu'au dernier invité."
+    },
+    "sweet": {
+      "title": "Le sucré",
+      "text": "Brownies aux fruits rouges, macarons, verrines, tartelettes : le buffet sucré se dresse comme une vitrine."
+    },
+    "formulas": {
+      "eyebrow": "Formules",
+      "title": "Trois façons de recevoir",
+      "text": "Chaque formule s'adapte à votre nombre d'invités et à votre menu. Votre devis est établi sur mesure.",
+      "from": "À partir de",
+      "perPerson": "€ / pers.",
+      "onQuote": "Sur devis",
+      "minGuests": "dès {n} invités",
+      "choose": "Choisir cette formule",
+      "items": {
+        "cocktail": {
+          "name": "Cocktail",
+          "text": "Pour un vin d'honneur, des fiançailles ou une réception debout.",
+          "includes": [
+            "Verrines et bouchées salées",
+            "Mignardises et douceurs",
+            "Cocktails et boissons fraîches"
+          ]
+        },
+        "buffet": {
+          "name": "Buffet",
+          "text": "Un grand buffet dressé, salé et sucré, où chacun se sert à son rythme.",
+          "includes": [
+            "Salades composées et plats chauds",
+            "Buffet de fruits sculptés",
+            "Desserts et pièce montée"
+          ]
+        },
+        "servi": {
+          "name": "Repas servi",
+          "text": "Le repas complet servi à table par nos serveurs, de l'entrée au dessert.",
+          "includes": [
+            "Entrée, plat et dessert",
+            "Service à table par notre équipe",
+            "Plats présentés sous cloche"
+          ]
+        }
+      }
+    }
+  },
+  "detail": {
+    "eyebrow": "Sud Events",
+    "title": "Chaque détail compte",
+    "text": "Une serviette pliée, une bougie, un couvert doré, un verre en cristal : c'est l'ensemble qui fait la table."
+  },
+  "decoration": {
+    "eyebrow": "002 — Décoration",
+    "title": "Une salle à votre image, du sol au plafond",
+    "text": "Nous habillons la salle de réception entière : voilages, arches de fleurs blanches, centres de table, chandeliers dorés ou en cristal, bougies et lumière. Mariage oriental, mixte ou plus classique, nous partons de vos couleurs et de votre histoire.",
+    "oriental": "Mariages orientaux et mixtes : trône des mariés, tapis d'entrée, cloches argentées, et une mise en lumière pensée pour chaque grand moment de la soirée.",
+    "items": [
+      {
+        "name": "Arches florales",
+        "text": "Arches de fleurs blanches pour l'entrée, la scène ou la cérémonie."
+      },
+      {
+        "name": "Centres de table",
+        "text": "Vases hauts et roses blanches, bougies flottantes, miroirs et supports dorés."
+      },
+      {
+        "name": "Chandeliers & bougies",
+        "text": "Chandeliers dorés, candélabres en cristal et rangées de bougies."
+      },
+      {
+        "name": "Trône & canapé des mariés",
+        "text": "Canapé capitonné blanc et or, chaises des mariés, fond de scène fleuri."
+      },
+      {
+        "name": "Panneaux & miroirs personnalisés",
+        "text": "Panneau de bienvenue et miroirs à vos prénoms et à la date du mariage."
+      },
+      {
+        "name": "Éclairage",
+        "text": "Lumières d'ambiance et bougies pour sublimer la salle à la tombée de la nuit."
+      }
+    ]
+  },
+  "rental": {
+    "eyebrow": "003 — Location de matériel",
+    "title": "Le matériel de nos mariages, à louer",
+    "text": "Le matériel que vous voyez dans nos réalisations se loue seul ou avec nos prestations de traiteur et de décoration. Ajoutez des articles à votre demande : ils apparaissent dans le formulaire de devis.",
+    "filterLabel": "Catégories",
+    "all": "Tout",
+    "cats": {
+      "mobilier": "Mobilier",
+      "lumiere": "Lumière",
+      "floral": "Décor floral",
+      "table": "Art de la table",
+      "service": "Service & buffet"
+    },
+    "units": {
+      "piece": "l'unité",
+      "table": "la table",
+      "guest": "par invité",
+      "set": "le lot"
+    },
+    "from": "À partir de",
+    "onRequest": "Prix sur demande",
+    "add": "Ajouter à ma demande",
+    "added": "Dans votre demande",
+    "remove": "Retirer",
+    "qty": "Quantité",
+    "decrease": "Retirer un",
+    "increase": "Ajouter un",
+    "barOne": "{n} article dans votre demande",
+    "barMany": "{n} articles dans votre demande",
+    "barCta": "Finaliser",
+    "note": "Quantités indicatives : nous confirmons les disponibilités pour votre date.",
+    "items": {
+      "trone": {
+        "name": "Trône & canapé des mariés",
+        "text": "Canapé capitonné blanc, cadre doré sculpté."
+      },
+      "chiavari": {
+        "name": "Chaises Chiavari cristal",
+        "text": "Chaises transparentes, légères et élégantes."
+      },
+      "tapis": {
+        "name": "Tapis d'entrée oriental",
+        "text": "Tapis rouge brodé et potelets dorés pour l'arrivée des mariés."
+      },
+      "chandelier-dore": {
+        "name": "Chandelier doré",
+        "text": "Grand chandelier doré à plusieurs branches."
+      },
+      "candelabre-cristal": {
+        "name": "Candélabre en cristal",
+        "text": "Candélabre transparent à cinq bougies, pour les tables d'honneur."
+      },
+      "photophore": {
+        "name": "Photophore à bougie flottante",
+        "text": "Cylindre en verre et bougie flottante, posé sur miroir rond."
+      },
+      "arche": {
+        "name": "Arche de fleurs blanches",
+        "text": "Arche fleurie pour l'entrée, la cérémonie ou les photos."
+      },
+      "centre-table": {
+        "name": "Centre de table roses blanches",
+        "text": "Vase haut et bouquet de roses blanches."
+      },
+      "support-dore": {
+        "name": "Support géométrique doré",
+        "text": "Structure dorée pour fleurs ou bougie flottante."
+      },
+      "art-table": {
+        "name": "Art de la table doré",
+        "text": "Assiettes blanches, couverts dorés, verres en cristal ciselé."
+      },
+      "nappage": {
+        "name": "Nappage & housses",
+        "text": "Nappes blanches et housses pour tables rondes."
+      },
+      "cloche": {
+        "name": "Cloche de service argentée",
+        "text": "Plat et cloche ciselés pour un service à l'orientale."
+      },
+      "presentoirs": {
+        "name": "Présentoirs de buffet",
+        "text": "Présentoirs en plexi givré pour verrines et douceurs."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Réalisations",
+    "title": "Nos mariages, tels qu'ils ont été",
+    "text": "Des images prises le jour J, dans les salles et les domaines où nous avons dressé les tables.",
+    "filterLabel": "Filtrer les réalisations",
+    "filters": {
+      "all": "Tout",
+      "traiteur": "Traiteur",
+      "decoration": "Décoration",
+      "salle": "Salles"
+    },
+    "open": "Agrandir",
+    "close": "Fermer",
+    "prev": "Image précédente",
+    "next": "Image suivante",
+    "instagram": "Toutes nos réalisations sur Instagram"
+  },
+  "reviews": {
+    "eyebrow": "Avis clients",
+    "title": "Ce qu'en disent les mariés",
+    "source": "Avis de mariés, partagé sur notre Instagram",
+    "original": "Avis original, en français",
+    "translation": ""
+  },
+  "partners": {
+    "eyebrow": "Ils travaillent avec nous",
+    "title": "Nos partenaires",
+    "text": "Des prestataires que nous retrouvons sur nos mariages, pour compléter votre journée.",
+    "roles": {
+      "dj": "DJ",
+      "negafa": "Negafa, tenues de mariée orientales"
+    }
+  },
+  "zone": {
+    "eyebrow": "Zone d'intervention",
+    "title": "Dans tout le Sud, de la Provence à l'Hérault",
+    "text": "Nous intervenons pour les mariages et les événements dans le Vaucluse, les Bouches-du-Rhône et l'Hérault, en salle de réception, dans un domaine ou en plein air. Votre lieu est ailleurs ? Demandez-nous.",
+    "cities": "Villes"
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Bon à savoir",
+    "items": [
+      {
+        "q": "Intervenez-vous dans ma ville ?",
+        "a": "Nous intervenons dans le Vaucluse (84), les Bouches-du-Rhône (13) et l'Hérault (34) : Avignon, Carpentras, Orange, Marseille, Aix-en-Provence, Arles, Montpellier, Béziers et leurs alentours. Pour un autre lieu, posez-nous la question."
+      },
+      {
+        "q": "Peut-on réserver le traiteur et la décoration ensemble ?",
+        "a": "Oui, c'est notre façon préférée de travailler : une seule équipe pour la cuisine, le service et la décoration, avec un devis unique. Vous pouvez aussi ne réserver que l'un des deux."
+      },
+      {
+        "q": "Peut-on louer le matériel sans prestation ?",
+        "a": "Oui. Chaises, nappage, art de la table, chandeliers, arches et présentoirs se louent seuls. Ajoutez les articles à votre demande depuis notre catalogue de location."
+      },
+      {
+        "q": "Préparez-vous des mariages orientaux ?",
+        "a": "Oui, une grande partie de nos mariages sont orientaux ou mixtes : plats servis sous cloche, buffets de fruits, trône des mariés, tapis d'entrée. Nous composons le menu et le décor avec vous."
+      },
+      {
+        "q": "Comment obtenir un devis ?",
+        "a": "Remplissez le formulaire de demande de devis : date, lieu, nombre d'invités et de tables, prestation souhaitée. Votre demande nous arrive sur WhatsApp et nous revenons vers vous avec une proposition."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "Demande de devis",
+    "title": "Parlons de votre événement",
+    "text": "Quelques informations suffisent pour préparer votre devis : la date, le lieu, le nombre de tables à décorer et la prestation souhaitée. Votre demande nous parvient directement sur WhatsApp.",
+    "direct": "Vous préférez nous écrire directement ?",
+    "call": "Appeler",
+    "steps": {
+      "event": "Votre événement",
+      "service": "Votre prestation",
+      "contact": "Vos coordonnées"
+    },
+    "fields": {
+      "eventType": "Type d'événement",
+      "eventTypes": {
+        "wedding": "Mariage",
+        "engagement": "Fiançailles",
+        "henna": "Henné",
+        "birthday": "Anniversaire",
+        "corporate": "Entreprise",
+        "other": "Autre"
+      },
+      "date": "Date de l'événement",
+      "dateBooked": "Cette date est déjà réservée chez nous. Envoyez quand même votre demande : nous vous dirons ce qui reste possible.",
+      "venue": "Lieu",
+      "venuePlaceholder": "Salle, domaine ou ville…",
+      "guests": "Nombre d'invités",
+      "tables": "Nombre de tables à décorer",
+      "service": "Prestation souhaitée",
+      "services": {
+        "deco": "Décoration",
+        "traiteur": "Service traiteur",
+        "both": "Les deux",
+        "location": "Location seule"
+      },
+      "formula": "Formule traiteur",
+      "formulaNone": "À définir ensemble",
+      "items": "Articles de location",
+      "itemsEmpty": "Aucun article pour l'instant.",
+      "itemsBrowse": "Parcourir le catalogue",
+      "budget": "Budget indicatif",
+      "optional": "facultatif",
+      "budgets": [
+        "Moins de 3 000 €",
+        "3 000 à 6 000 €",
+        "6 000 à 10 000 €",
+        "Plus de 10 000 €",
+        "Je ne sais pas encore"
+      ],
+      "budgetNone": "Non précisé",
+      "name": "Nom et prénom",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "message": "Message",
+      "messagePlaceholder": "Vos couleurs, vos envies, le déroulé de la soirée…"
+    },
+    "required": "Champ obligatoire",
+    "invalidPhone": "Numéro de téléphone invalide",
+    "invalidEmail": "Adresse e-mail invalide",
+    "submit": "Envoyer ma demande sur WhatsApp",
+    "sending": "Préparation…",
+    "hint": "WhatsApp s'ouvre avec le récapitulatif de votre demande : il ne reste qu'à appuyer sur Envoyer.",
+    "consent": "Vos informations servent uniquement à vous répondre et à établir votre devis.",
+    "success": {
+      "thanks": "Merci",
+      "title": "Votre demande est prête",
+      "text": "WhatsApp s'est ouvert avec le récapitulatif de votre demande. Si rien ne s'est ouvert, utilisez le bouton ci-dessous.",
+      "again": "Ouvrir WhatsApp",
+      "reset": "Faire une autre demande"
+    },
+    "message": {
+      "title": "Demande de devis Sud Events",
+      "event": "Événement",
+      "date": "Date",
+      "venue": "Lieu",
+      "guests": "Invités",
+      "tables": "Tables à décorer",
+      "service": "Prestation",
+      "formula": "Formule",
+      "items": "Location",
+      "budget": "Budget",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "notes": "Message",
+      "ref": "Réf.",
+      "closing": "Merci, nous revenons vers vous très vite."
+    }
+  },
+  "email": {
+    "subjectBusiness": "Nouvelle demande de devis",
+    "subjectClient": "Votre demande de devis Sud Events",
+    "intro": "Bonjour,\n\nNous avons bien reçu votre demande de devis, en voici le récapitulatif. Nous revenons vers vous très vite.\n\nL'équipe Sud Events"
+  },
+  "whatsapp": {
+    "float": "Écrire à Sud Events sur WhatsApp",
+    "hello": "Bonjour Sud Events, je souhaite des informations pour un événement."
+  },
+  "footer": {
+    "tagline": "Traiteur, décoration et location de matériel pour mariages et événements dans le Sud de la France.",
+    "contact": "Contact",
+    "follow": "Suivre",
+    "zones": "Zones",
+    "legal": "Mentions légales",
+    "rights": "Tous droits réservés",
+    "photos": "Photos et vidéos : Sud Events"
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "text": "Sud Events, traiteur, décoration et location de matériel pour mariages et événements. Téléphone et WhatsApp : 07 83 67 90 92. Instagram : @sud_events."
+      },
+      {
+        "title": "Hébergement",
+        "text": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis."
+      },
+      {
+        "title": "Données personnelles",
+        "text": "Les informations envoyées par le formulaire de devis servent uniquement à répondre à votre demande. Elles nous sont transmises par WhatsApp et, le cas échéant, par e-mail. Elles ne sont ni revendues ni utilisées à d'autres fins. Vous pouvez demander leur suppression à tout moment par téléphone ou par WhatsApp."
+      },
+      {
+        "title": "Photos",
+        "text": "Les photos et vidéos du site sont issues des réalisations de Sud Events. Toute reproduction sans autorisation est interdite."
+      }
+    ],
+    "back": "Retour à l'accueil"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Cette page n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  },
+  "alt": {
+    "trone-dore-bougies": "Canapé des mariés blanc et or devant un rideau de voilages et des bougies",
+    "salle-chandeliers-dores": "Salle de réception dressée avec de grands chandeliers dorés",
+    "chandelier-cristal-provence": "Table ronde en plein air avec candélabre en cristal, en Provence",
+    "poulet-olives-amandes": "Poulet aux olives et aux amandes, plat oriental servi à table",
+    "buffet-fruits": "Buffet de fruits frais : bananes, oranges, pommes et bûche",
+    "poulets-rotis": "Poulets rôtis aux olives sur assiettes blanches",
+    "buffet-salades-composees": "Buffet de salades composées sur présentoirs dorés",
+    "tajine-poulet-amandes": "Tajine de poulet aux amandes et aux olives",
+    "buffet-salades-pates": "Buffet de salades de pâtes, carottes et feuilletés",
+    "buffet-piscine": "Buffet de douceurs dressé au bord d'une piscine",
+    "cocktails-bleus": "Cocktails bleus à la menthe sur présentoirs en plexi givré",
+    "verrines-menthe": "Verrines de menthe fraîche alignées sur le buffet",
+    "mini-pizzas": "Plateau de mini-pizzas et de feuilletés",
+    "brownies-framboises": "Brownies aux framboises et myrtilles",
+    "macarons-piscine": "Macarons et verrines bleues au bord de la piscine",
+    "gateau-fruits-rouges": "Gâteau aux fruits rouges entouré de coupes de fruits",
+    "verrines-panna-cotta": "Verrines crémeuses à l'ananas sur présentoirs",
+    "mignardises-tartelettes": "Tartelettes aux fruits et mignardises sur le buffet",
+    "buffet-patisseries": "Buffet de pâtisseries, brownies et tartelettes",
+    "chaises-maries-arche-roses": "Chaises des mariés blanches et dorées sous une arche de roses",
+    "bougie-flottante-centre-table": "Centre de table avec bougie flottante sur miroir rond",
+    "roses-blanches-bougies": "Couronne de roses blanches et bougie sur la table d'honneur",
+    "centre-table-roses-hautes": "Centre de table haut de roses blanches, salle dressée",
+    "vases-dores-fleurs": "Vases dorés et bouquets de roses sur table dressée",
+    "bougies-salle-vases-dores": "Table dressée aux vases dorés, bougies au fond de la salle",
+    "support-dore-bougie-flottante": "Support géométrique doré avec fleurs et bougie flottante",
+    "table-dressee-or": "Table ronde dressée, couverts dorés et bougies",
+    "arche-fleurs-entree": "Arche de fleurs blanches à l'entrée de la salle",
+    "chaises-trone-mariage-plein-air": "Table en plein air sous un bouquet de roses, vue sur la campagne",
+    "table-roses-candelabres": "Table dressée aux roses blanches et candélabres dorés",
+    "table-roses-arches-lumineuses": "Table ronde aux roses blanches, couverts dorés, canapé des mariés et arches lumineuses",
+    "salle-voilages-lustres": "Salle sous voilages blancs et lustres, tables dressées",
+    "salle-tables-rondes": "Tables rondes nappées de blanc et chaises en cristal",
+    "salle-dressee-vases-dores": "Salle dressée aux vases dorés et chaises transparentes",
+    "salle-candelabres-dores": "Salle de réception aux candélabres dorés et chaises cristal",
+    "tapis-rouge-entree": "Tapis rouge brodé et potelets dorés à l'entrée de la salle",
+    "reception-plein-air-provence": "Réception en plein air, tables rondes et arche de fleurs",
+    "table-piscine-vue": "Table d'honneur fleurie au bord de la piscine, vue sur les collines",
+    "tables-dressees-fleurs": "Tables dressées de roses blanches et couverts dorés",
+    "serveuse-plateau-fumee": "Serveuse portant un plateau de salades dans un nuage de fumée",
+    "serveur-plateau-salle": "Serveur portant un plateau de salades dans la salle",
+    "serveuse-plateau-salades": "Serveuse apportant les plateaux aux tables",
+    "service-cloches-jardin": "Équipe Sud Events présentant les plats sous cloche dans le jardin",
+    "serveuse-poulet-piscine": "Buffet au bord de la piscine, nappe au logo Sud Events",
+    "etincelles-fumee": "Entrée des mariés avec fontaines d'étincelles et fumée lourde",
+    "piste-voilages-lumieres": "Piste de danse sous un plafond de voilages et guirlandes lumineuses",
+    "soiree-jardin": "Soirée au bord de la piscine, table au logo Sud Events",
+    "trone-canape-dore": "Canapé des mariés capitonné blanc au cadre doré sculpté",
+    "chandelier-dore-5-branches": "Grand chandelier doré sur table dressée",
+    "chandelier-cristal": "Candélabre en cristal sur table ronde en plein air",
+    "arche-fleurs-blanches": "Arche de fleurs blanches",
+    "centre-table-vase-haut": "Centre de table, vase haut et roses blanches",
+    "cloche-argent": "Pastillas servies sous cloches argentées",
+    "presentoirs-plexi": "Présentoirs en plexi givré garnis de verrines",
+    "photophore-bougie-flottante": "Photophore en verre avec bougie flottante",
+    "art-de-la-table-dore": "Assiettes blanches et couverts dorés sur table ronde",
+    "tapis-rouge": "Tapis d'entrée rouge brodé",
+    "chaises-chiavari-cristal": "Chaise Chiavari en cristal près d'une table nappée",
+    "support-geometrique-dore": "Support géométrique doré garni de roses",
+    "pastillas-cloches-argent": "Pastillas aux fruits de mer sous cloches argentées ciselées",
+    "pastilla-fruits-de-mer": "Pastilla aux fruits de mer garnie de crevettes"
+  }
+}

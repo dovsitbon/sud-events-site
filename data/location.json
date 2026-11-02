@@ -1,0 +1,19 @@
+{
+  "_note": "Catalogue de location. priceFrom en euros (null = « Prix sur demande »). Noms et descriptions dans locales/*.json → rental.items.<id>. Photos tirées des reels Instagram : à remplacer par des photos produit sur fond neutre si Sud Events en a.",
+  "categories": ["mobilier", "lumiere", "floral", "table", "service"],
+  "items": [
+    { "id": "trone", "cat": "mobilier", "img": "/media/location/trone-canape-dore.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "chiavari", "cat": "mobilier", "img": "/media/location/chaises-chiavari-cristal.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "tapis", "cat": "mobilier", "img": "/media/location/tapis-rouge.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "chandelier-dore", "cat": "lumiere", "img": "/media/location/chandelier-dore-5-branches.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "candelabre-cristal", "cat": "lumiere", "img": "/media/location/chandelier-cristal.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "photophore", "cat": "lumiere", "img": "/media/location/photophore-bougie-flottante.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "arche", "cat": "floral", "img": "/media/location/arche-fleurs-blanches.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "centre-table", "cat": "floral", "img": "/media/location/centre-table-vase-haut.jpg", "priceFrom": null, "unit": "table" },
+    { "id": "support-dore", "cat": "floral", "img": "/media/location/support-geometrique-dore.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "art-table", "cat": "table", "img": "/media/location/art-de-la-table-dore.jpg", "priceFrom": null, "unit": "guest" },
+    { "id": "nappage", "cat": "table", "img": "/media/salles/salle-tables-rondes.jpg", "priceFrom": null, "unit": "table" },
+    { "id": "cloche", "cat": "service", "img": "/media/location/cloche-argent.jpg", "priceFrom": null, "unit": "piece" },
+    { "id": "presentoirs", "cat": "service", "img": "/media/location/presentoirs-plexi.jpg", "priceFrom": null, "unit": "set" }
+  ]
+}

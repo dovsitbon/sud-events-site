@@ -1,0 +1,1520 @@
+# SUD EVENTS — contenu du site à valider
+
+Site : https://sud-events.vercel.app (FR /fr, EN /en, AR /ar). Les textes se modifient dans `locales/fr.json`, `en.json`, `ar.json` ; ce fichier est régénéré par `npm run contenu`.
+
+## Infos à demander à Sud Events
+
+1. **Prix des formules** traiteur (cocktail, buffet, repas servi) : prix « à partir de » par personne et nombre minimum d'invités → `data/formules.json`. Tant qu'ils sont vides, le site affiche « Sur devis ».
+2. **Liste exacte du matériel de location**, avec prix et unité (pièce, table, invité, lot) → `data/location.json`. Le catalogue actuel reprend le matériel visible dans leurs reels ; à confirmer, compléter ou retirer.
+3. **Photos produit** du matériel de location (sur fond neutre si possible) : aujourd'hui ce sont des images tirées des reels.
+4. **Nom du gérant** et présentation de l'équipe.
+5. **Adresse ou ville du siège**, forme juridique et **SIRET** (mentions légales, fiche Google, données structurées).
+6. **E-mail de contact** qui recevra les demandes de devis (variable `QUOTE_NOTIFY_EMAIL`) et un domaine pour envoyer les e-mails (Resend).
+7. **Autres avis clients** (texte, prénom, type d'événement, accord pour publication) → `data/reviews.json`.
+8. **Vidéos en bonne qualité** (fichiers originaux, pas les reels compressés), en particulier un plan horizontal pour le haut de page.
+9. **Partenaires** : liens Instagram de DJ Tahar et autres prestataires → `data/partners.json`.
+10. **Dates déjà réservées** à griser dans le formulaire → `data/dates.json`.
+11. **Photos publiées** : seuls les 11 reels publics ont pu être récupérés (Instagram limite l'accès sans connexion). Les 73 publications, les stories « Devis », « Avis client », « Plat » et le visuel du logo en haute définition sont à fournir.
+12. Confirmer : cuisine halal ou non, déplacements hors 84 / 13 / 34, délai de réservation conseillé (non indiqués sur le site tant qu'ils ne sont pas confirmés).
+
+## Formules (data/formules.json)
+
+- **Cocktail** — prix à fournir (affiché « Sur devis ») — Verrines et bouchées salées, Mignardises et douceurs, Cocktails et boissons fraîches
+- **Buffet** — prix à fournir (affiché « Sur devis ») — Salades composées et plats chauds, Buffet de fruits sculptés, Desserts et pièce montée
+- **Repas servi** — prix à fournir (affiché « Sur devis ») — Entrée, plat et dessert, Service à table par notre équipe, Plats présentés sous cloche
+
+## Catalogue de location (data/location.json)
+
+| Catégorie | Article | Description | Prix |
+| --- | --- | --- | --- |
+| Mobilier | Trône & canapé des mariés | Canapé capitonné blanc, cadre doré sculpté. | à fournir |
+| Mobilier | Chaises Chiavari cristal | Chaises transparentes, légères et élégantes. | à fournir |
+| Mobilier | Tapis d'entrée oriental | Tapis rouge brodé et potelets dorés pour l'arrivée des mariés. | à fournir |
+| Lumière | Chandelier doré | Grand chandelier doré à plusieurs branches. | à fournir |
+| Lumière | Candélabre en cristal | Candélabre transparent à cinq bougies, pour les tables d'honneur. | à fournir |
+| Lumière | Photophore à bougie flottante | Cylindre en verre et bougie flottante, posé sur miroir rond. | à fournir |
+| Décor floral | Arche de fleurs blanches | Arche fleurie pour l'entrée, la cérémonie ou les photos. | à fournir |
+| Décor floral | Centre de table roses blanches | Vase haut et bouquet de roses blanches. | à fournir |
+| Décor floral | Support géométrique doré | Structure dorée pour fleurs ou bougie flottante. | à fournir |
+| Art de la table | Art de la table doré | Assiettes blanches, couverts dorés, verres en cristal ciselé. | à fournir |
+| Art de la table | Nappage & housses | Nappes blanches et housses pour tables rondes. | à fournir |
+| Service & buffet | Cloche de service argentée | Plat et cloche ciselés pour un service à l'orientale. | à fournir |
+| Service & buffet | Présentoirs de buffet | Présentoirs en plexi givré pour verrines et douceurs. | à fournir |
+
+## Avis clients publiés
+
+> Un immense merci à l'équipe de Sud Event pour avoir transformé notre mariage en un véritable conte de fées ! La décoration était absolument sublime, chaque détail parfaitement pensé et exécuté. […] Votre professionnalisme est remarquable : réactifs, disponibles, à l'écoute, et surtout incroyablement arrangeants. […] Vous êtes bien plus qu'un simple prestataire, vous êtes de véritables artistes […] Je recommande Sud Event les yeux fermés.
+
+
+## Textes du site (FR / EN / AR)
+
+
+### meta
+
+- `meta.title`
+  - FR : Traiteur & décoration de mariage dans le Vaucluse, les Bouches-du-Rhône et l'Hérault \| Sud Events
+  - EN : Wedding Catering & Decoration in Provence, Vaucluse, Bouches-du-Rhône & Hérault \| Sud Events
+  - AR : ممون حفلات وديكور أعراس في جنوب فرنسا: فوكلوز، بوش دو رون، إيرو \| Sud Events
+- `meta.description`
+  - FR : Sud Events, traiteur, décorateur et loueur de matériel pour mariages orientaux et mixtes à Avignon, Marseille, Aix-en-Provence et Montpellier (84, 13, 34). Demandez votre devis.
+  - EN : Sud Events: catering, decoration and equipment hire for Oriental and mixed weddings in Avignon, Marseille, Aix-en-Provence and Montpellier, South of France. Request a quote.
+  - AR : سود إيفنتس: ممون حفلات وديكور وتأجير معدات للأعراس الشرقية والمختلطة في أفينيون ومرسيليا وإكس أون بروفانس ومونبلييه. اطلبوا عرض السعر.
+- `meta.legalTitle`
+  - FR : Mentions légales \| Sud Events
+  - EN : Legal notice \| Sud Events
+  - AR : الإشعار القانوني \| Sud Events
+- `meta.legalDescription`
+  - FR : Mentions légales et données personnelles du site Sud Events, traiteur et décoration de mariage.
+  - EN : Legal notice and personal data for the Sud Events website, wedding catering and decoration.
+  - AR : الإشعار القانوني والبيانات الشخصية لموقع سود إيفنتس، تموين وديكور الأعراس.
+
+### nav
+
+- `nav.traiteur`
+  - FR : Traiteur
+  - EN : Catering
+  - AR : التموين
+- `nav.decoration`
+  - FR : Décoration
+  - EN : Decoration
+  - AR : الديكور
+- `nav.location`
+  - FR : Location
+  - EN : Hire
+  - AR : التأجير
+- `nav.realisations`
+  - FR : Réalisations
+  - EN : Weddings
+  - AR : أعمالنا
+- `nav.avis`
+  - FR : Avis
+  - EN : Reviews
+  - AR : الآراء
+- `nav.contact`
+  - FR : Contact
+  - EN : Contact
+  - AR : تواصل
+- `nav.quote`
+  - FR : Demander un devis
+  - EN : Request a quote
+  - AR : اطلبوا عرض سعر
+- `nav.quoteShort`
+  - FR : Devis
+  - EN : Quote
+  - AR : عرض سعر
+- `nav.menu`
+  - FR : Menu
+  - EN : Menu
+  - AR : القائمة
+- `nav.close`
+  - FR : Fermer le menu
+  - EN : Close menu
+  - AR : إغلاق القائمة
+- `nav.home`
+  - FR : Sud Events, accueil
+  - EN : Sud Events, home
+  - AR : سود إيفنتس، الصفحة الرئيسية
+- `nav.language`
+  - FR : Langue
+  - EN : Language
+  - AR : اللغة
+- `nav.skip`
+  - FR : Aller au contenu
+  - EN : Skip to content
+  - AR : الانتقال إلى المحتوى
+
+### intro
+
+- `intro.skip`
+  - FR : Passer
+  - EN : Skip
+  - AR : تخطي
+
+### hero
+
+- `hero.eyebrow`
+  - FR : Traiteur · Décoration · Location — 84 / 13 / 34
+  - EN : Catering · Decoration · Hire — South of France
+  - AR : تموين · ديكور · تأجير — جنوب فرنسا
+- `hero.title`
+  - FR : Votre mariage, du premier plat à la dernière bougie
+  - EN : Your wedding, from the first dish to the last candle
+  - AR : عرسكم، من أول طبق إلى آخر شمعة
+- `hero.cta`
+  - FR : Demander un devis
+  - EN : Request a quote
+  - AR : اطلبوا عرض سعر
+- `hero.whatsapp`
+  - FR : WhatsApp
+  - EN : WhatsApp
+  - AR : واتساب
+- `hero.scroll`
+  - FR : Découvrir
+  - EN : Discover
+  - AR : اكتشفوا
+- `hero.alt`
+  - FR : Canapé des mariés blanc et or devant un rideau de voilages éclairé de bougies, décoration Sud Events
+  - EN : White and gold bridal sofa in front of draped curtains lit with candles, decoration by Sud Events
+  - AR : أريكة العروسين البيضاء والذهبية أمام ستائر مضاءة بالشموع، من ديكور سود إيفنتس
+
+### manifesto
+
+- `manifesto.eyebrow`
+  - FR : La maison
+  - EN : The house
+  - AR : عن الدار
+- `manifesto.title`
+  - FR : Un traiteur et un décorateur, réunis sous un même nom.
+  - EN : A caterer and a decorator, under one name.
+  - AR : ممون حفلات ومصمم ديكور، تحت اسم واحد.
+- `manifesto.text`
+  - FR : Chez Sud Events, la cuisine et la décoration se pensent ensemble. Les couleurs de la salle répondent aux plats, les centres de table laissent la place aux plateaux, et une seule équipe veille sur tout, de l'installation au dernier service. Le jour J, vous n'avez qu'un interlocuteur, et tout est cohérent.
+  - EN : At Sud Events, food and decoration are designed together. The colours of the room answer the dishes, the centrepieces leave room for the platters, and one team looks after everything, from set-up to the last course. On the day, you have a single contact, and everything fits.
+  - AR : في سود إيفنتس، نصمم المطبخ والديكور معًا. ألوان القاعة تتناغم مع الأطباق، وزينة الطاولات تترك مكانًا للصواني، وفريق واحد يسهر على كل شيء، من التجهيز إلى آخر خدمة. يوم العرس، تتعاملون مع جهة واحدة، ويأتي كل شيء منسجمًا.
+- `manifesto.link`
+  - FR : Nos trois métiers
+  - EN : Our three crafts
+  - AR : مهننا الثلاث
+
+### trades
+
+- `trades.eyebrow`
+  - FR : Nos métiers
+  - EN : What we do
+  - AR : مهننا
+- `trades.title`
+  - FR : Trois savoir-faire, un seul jour J
+  - EN : Three crafts, one wedding day
+  - AR : ثلاث حرف، ويوم عرس واحد
+- `trades.items.0.id`
+  - FR : traiteur
+  - EN : traiteur
+  - AR : traiteur
+- `trades.items.0.name`
+  - FR : Traiteur
+  - EN : Catering
+  - AR : التموين
+- `trades.items.0.text`
+  - FR : Buffets de fruits sculptés, salades composées, verrines, mignardises, pièces montées et plats servis à table par nos serveurs.
+  - EN : Carved fruit buffets, composed salads, verrines, petits fours, tiered cakes and dishes served at the table by our waiters.
+  - AR : بوفيهات فواكه منحوتة، سلطات متنوعة، كؤوس صغيرة، حلويات، كعكات الأعراس وأطباق يقدمها نُدُلنا على الطاولات.
+- `trades.items.1.id`
+  - FR : decoration
+  - EN : decoration
+  - AR : decoration
+- `trades.items.1.name`
+  - FR : Décoration
+  - EN : Decoration
+  - AR : الديكور
+- `trades.items.1.text`
+  - FR : Arches de fleurs blanches, chandeliers, bougies, trône des mariés et panneaux à vos prénoms : la salle prend vos couleurs.
+  - EN : White flower arches, candelabras, candles, the couple's throne and signs with your names: the room takes on your colours.
+  - AR : أقواس من الورد الأبيض، شمعدانات، شموع، عرش العروسين ولوحات بأسمائكم: القاعة تأخذ ألوانكم.
+- `trades.items.2.id`
+  - FR : location
+  - EN : location
+  - AR : location
+- `trades.items.2.name`
+  - FR : Location de matériel
+  - EN : Equipment hire
+  - AR : تأجير المعدات
+- `trades.items.2.text`
+  - FR : Chaises, nappage, vaisselle dorée, chandeliers, arches et présentoirs, à louer seuls ou avec nos prestations.
+  - EN : Chairs, linen, gold tableware, candelabras, arches and stands, to hire on their own or with our services.
+  - AR : كراسٍ، مفارش، أوانٍ ذهبية، شمعدانات، أقواس وحوامل، للتأجير وحدها أو مع خدماتنا.
+- `trades.more`
+  - FR : Découvrir
+  - EN : Discover
+  - AR : اكتشفوا
+
+### traiteur
+
+- `traiteur.eyebrow`
+  - FR : 001 — Traiteur
+  - EN : 001 — Catering
+  - AR : 001 — التموين
+- `traiteur.title`
+  - FR : Une table généreuse, pensée comme un décor
+  - EN : A generous table, designed like a set
+  - AR : مائدة سخية، مصممة كأنها ديكور
+- `traiteur.text`
+  - FR : Nos buffets se voient avant de se goûter : fruits sculptés, plats sous cloche argentée, effets de fumée à l'arrivée des plateaux. Cuisine orientale et cuisine du Sud, salé comme sucré, nous composons le menu avec vous selon vos invités et votre façon de recevoir.
+  - EN : Our buffets are seen before they are tasted: carved fruit, dishes under silver cloches, a veil of smoke as the platters arrive. Oriental and Southern cooking, savoury and sweet, we build the menu with you around your guests and the way you like to entertain.
+  - AR : بوفيهاتنا تُرى قبل أن تُتذوق: فواكه منحوتة، أطباق تحت أغطية فضية، وسحابة من الدخان مع وصول الصواني. مطبخ شرقي ومطبخ الجنوب، مالح وحلو، نعدّ القائمة معكم حسب ضيوفكم وطريقتكم في الاستقبال.
+- `traiteur.specialties.0.name`
+  - FR : Buffets de fruits
+  - EN : Fruit buffets
+  - AR : بوفيه الفواكه
+- `traiteur.specialties.0.text`
+  - FR : Fruits frais sculptés et dressés en cascade, pour un final tout en couleurs.
+  - EN : Fresh fruit, carved and cascading, for a colourful finale.
+  - AR : فواكه طازجة منحوتة ومرتبة في شلال ملوّن يختم السهرة.
+- `traiteur.specialties.1.name`
+  - FR : Buffets salés
+  - EN : Savoury buffets
+  - AR : البوفيه المالح
+- `traiteur.specialties.1.text`
+  - FR : Salades composées, pastillas aux fruits de mer, feuilletés, mini-pizzas et pâtes fraîches.
+  - EN : Composed salads, seafood pastillas, pastries, mini pizzas and pasta.
+  - AR : سلطات متنوعة، بسطيلة بفواكه البحر، معجنات، بيتزا صغيرة ومعكرونة.
+- `traiteur.specialties.2.name`
+  - FR : Verrines & mignardises
+  - EN : Verrines & petits fours
+  - AR : الكؤوس الصغيرة والحلويات
+- `traiteur.specialties.2.text`
+  - FR : Verrines, tartelettes, macarons, brownies et douceurs à picorer.
+  - EN : Verrines, tartlets, macarons, brownies and sweet bites.
+  - AR : كؤوس صغيرة، تارت، ماكرون، براونيز وحلويات صغيرة.
+- `traiteur.specialties.3.name`
+  - FR : Pièces montées & gâteaux
+  - EN : Tiered & celebration cakes
+  - AR : كعكات الأعراس
+- `traiteur.specialties.3.text`
+  - FR : Pièces montées et gâteaux de fête, présentés au moment fort de la soirée.
+  - EN : Tiered cakes and celebration cakes, brought out at the high point of the evening.
+  - AR : كعكات بطبقات وكعكات احتفالية تُقدَّم في أجمل لحظات السهرة.
+- `traiteur.specialties.4.name`
+  - FR : Plats servis à table
+  - EN : Dishes served at the table
+  - AR : أطباق تُقدَّم على الطاولة
+- `traiteur.specialties.4.text`
+  - FR : Poulet aux olives et aux amandes, tajines, plats en sauce servis sous cloche.
+  - EN : Chicken with olives and almonds, tagines and slow-cooked dishes served under cloches.
+  - AR : دجاج بالزيتون واللوز، طواجن وأطباق بالمرق تحت أغطية فضية.
+- `traiteur.specialties.5.name`
+  - FR : Service avec serveurs
+  - EN : Waiting staff
+  - AR : خدمة النُّدُل
+- `traiteur.specialties.5.text`
+  - FR : Une équipe en salle pour le service à table, l'arrivée des plateaux et le buffet.
+  - EN : A team on the floor for table service, the arrival of the platters and the buffet.
+  - AR : فريق في القاعة للخدمة على الطاولات ووصول الصواني والبوفيه.
+- `traiteur.service.script`
+  - FR : Service
+  - EN : Service
+  - AR : 
+- `traiteur.service.title`
+  - FR : Le service, en salle
+  - EN : Service, on the floor
+  - AR : الخدمة في القاعة
+- `traiteur.service.text`
+  - FR : Nos serveurs portent les plats jusqu'aux tables, sous cloche argentée ou dans un nuage de fumée, et veillent sur le buffet jusqu'au dernier invité.
+  - EN : Our waiters carry the dishes to the tables, under silver cloches or in a cloud of smoke, and look after the buffet until the last guest.
+  - AR : يحمل نُدُلنا الأطباق إلى الطاولات، تحت أغطية فضية أو في سحابة من الدخان، ويسهرون على البوفيه حتى آخر ضيف.
+- `traiteur.sweet.title`
+  - FR : Le sucré
+  - EN : The sweet table
+  - AR : ركن الحلويات
+- `traiteur.sweet.text`
+  - FR : Brownies aux fruits rouges, macarons, verrines, tartelettes : le buffet sucré se dresse comme une vitrine.
+  - EN : Red berry brownies, macarons, verrines, tartlets: the dessert buffet is laid out like a shop window.
+  - AR : براونيز بالفواكه الحمراء، ماكرون، كؤوس صغيرة وتارت: بوفيه الحلويات يُرتَّب كواجهة متجر.
+- `traiteur.formulas.eyebrow`
+  - FR : Formules
+  - EN : Packages
+  - AR : الباقات
+- `traiteur.formulas.title`
+  - FR : Trois façons de recevoir
+  - EN : Three ways to entertain
+  - AR : ثلاث طرق للاستقبال
+- `traiteur.formulas.text`
+  - FR : Chaque formule s'adapte à votre nombre d'invités et à votre menu. Votre devis est établi sur mesure.
+  - EN : Each package adapts to your number of guests and your menu. Your quote is tailored to your event.
+  - AR : تتكيف كل باقة مع عدد ضيوفكم وقائمتكم. يُعدّ عرض السعر خصيصًا لمناسبتكم.
+- `traiteur.formulas.from`
+  - FR : À partir de
+  - EN : From
+  - AR : ابتداءً من
+- `traiteur.formulas.perPerson`
+  - FR : € / pers.
+  - EN : € / guest
+  - AR : € للشخص
+- `traiteur.formulas.onQuote`
+  - FR : Sur devis
+  - EN : On quotation
+  - AR : حسب عرض السعر
+- `traiteur.formulas.minGuests`
+  - FR : dès {n} invités
+  - EN : from {n} guests
+  - AR : ابتداءً من {n} ضيفًا
+- `traiteur.formulas.choose`
+  - FR : Choisir cette formule
+  - EN : Choose this package
+  - AR : اختيار هذه الباقة
+- `traiteur.formulas.items.cocktail.name`
+  - FR : Cocktail
+  - EN : Cocktail
+  - AR : كوكتيل
+- `traiteur.formulas.items.cocktail.text`
+  - FR : Pour un vin d'honneur, des fiançailles ou une réception debout.
+  - EN : For a reception drink, an engagement or a standing party.
+  - AR : لحفل استقبال أو خطوبة أو سهرة وقوفًا.
+- `traiteur.formulas.items.cocktail.includes.0`
+  - FR : Verrines et bouchées salées
+  - EN : Verrines and savoury bites
+  - AR : كؤوس صغيرة ولقيمات مالحة
+- `traiteur.formulas.items.cocktail.includes.1`
+  - FR : Mignardises et douceurs
+  - EN : Petits fours and sweets
+  - AR : حلويات صغيرة
+- `traiteur.formulas.items.cocktail.includes.2`
+  - FR : Cocktails et boissons fraîches
+  - EN : Cocktails and cold drinks
+  - AR : كوكتيلات ومشروبات باردة
+- `traiteur.formulas.items.buffet.name`
+  - FR : Buffet
+  - EN : Buffet
+  - AR : بوفيه
+- `traiteur.formulas.items.buffet.text`
+  - FR : Un grand buffet dressé, salé et sucré, où chacun se sert à son rythme.
+  - EN : A grand buffet, savoury and sweet, where everyone helps themselves.
+  - AR : بوفيه كبير، مالح وحلو، يخدم فيه كل ضيف نفسه على راحته.
+- `traiteur.formulas.items.buffet.includes.0`
+  - FR : Salades composées et plats chauds
+  - EN : Composed salads and hot dishes
+  - AR : سلطات متنوعة وأطباق ساخنة
+- `traiteur.formulas.items.buffet.includes.1`
+  - FR : Buffet de fruits sculptés
+  - EN : Carved fruit buffet
+  - AR : بوفيه فواكه منحوتة
+- `traiteur.formulas.items.buffet.includes.2`
+  - FR : Desserts et pièce montée
+  - EN : Desserts and tiered cake
+  - AR : حلويات وكعكة العرس
+- `traiteur.formulas.items.servi.name`
+  - FR : Repas servi
+  - EN : Served dinner
+  - AR : عشاء مُقدَّم
+- `traiteur.formulas.items.servi.text`
+  - FR : Le repas complet servi à table par nos serveurs, de l'entrée au dessert.
+  - EN : The full meal served at the table by our waiters, from starter to dessert.
+  - AR : وجبة كاملة يقدمها نُدُلنا على الطاولة، من المقبلات إلى الحلوى.
+- `traiteur.formulas.items.servi.includes.0`
+  - FR : Entrée, plat et dessert
+  - EN : Starter, main and dessert
+  - AR : مقبلات وطبق رئيسي وحلوى
+- `traiteur.formulas.items.servi.includes.1`
+  - FR : Service à table par notre équipe
+  - EN : Table service by our team
+  - AR : خدمة على الطاولة من فريقنا
+- `traiteur.formulas.items.servi.includes.2`
+  - FR : Plats présentés sous cloche
+  - EN : Dishes presented under cloches
+  - AR : أطباق تحت أغطية فضية
+
+### detail
+
+- `detail.eyebrow`
+  - FR : Sud Events
+  - EN : Sud Events
+  - AR : سود إيفنتس
+- `detail.title`
+  - FR : Chaque détail compte
+  - EN : Every detail counts
+  - AR : كل تفصيل له قيمته
+- `detail.text`
+  - FR : Une serviette pliée, une bougie, un couvert doré, un verre en cristal : c'est l'ensemble qui fait la table.
+  - EN : A folded napkin, a candle, gold cutlery, a crystal glass: it is the whole that makes the table.
+  - AR : منديل مطوي، شمعة، أدوات مائدة ذهبية، كأس من الكريستال: المجموع هو ما يصنع المائدة.
+
+### decoration
+
+- `decoration.eyebrow`
+  - FR : 002 — Décoration
+  - EN : 002 — Decoration
+  - AR : 002 — الديكور
+- `decoration.title`
+  - FR : Une salle à votre image, du sol au plafond
+  - EN : A room in your image, from floor to ceiling
+  - AR : قاعة على صورتكم، من الأرض إلى السقف
+- `decoration.text`
+  - FR : Nous habillons la salle de réception entière : voilages, arches de fleurs blanches, centres de table, chandeliers dorés ou en cristal, bougies et lumière. Mariage oriental, mixte ou plus classique, nous partons de vos couleurs et de votre histoire.
+  - EN : We dress the whole reception room: draping, white flower arches, centrepieces, gold or crystal candelabras, candles and light. Oriental, mixed or more classic, we start from your colours and your story.
+  - AR : نزيّن قاعة الاستقبال بأكملها: ستائر، أقواس من الورد الأبيض، زينة الطاولات، شمعدانات ذهبية أو كريستالية، شموع وإضاءة. عرس شرقي أو مختلط أو كلاسيكي، ننطلق من ألوانكم ومن قصتكم.
+- `decoration.oriental`
+  - FR : Mariages orientaux et mixtes : trône des mariés, tapis d'entrée, cloches argentées, et une mise en lumière pensée pour chaque grand moment de la soirée.
+  - EN : Oriental and mixed weddings: the couple's throne, entrance carpet, silver cloches, and lighting designed for every big moment of the night.
+  - AR : الأعراس الشرقية والمختلطة: عرش العروسين، سجادة الدخول، الأغطية الفضية، وإضاءة مدروسة لكل لحظة كبيرة في السهرة.
+- `decoration.items.0.name`
+  - FR : Arches florales
+  - EN : Flower arches
+  - AR : أقواس الورد
+- `decoration.items.0.text`
+  - FR : Arches de fleurs blanches pour l'entrée, la scène ou la cérémonie.
+  - EN : White flower arches for the entrance, the stage or the ceremony.
+  - AR : أقواس من الورد الأبيض للمدخل أو المنصة أو المراسم.
+- `decoration.items.1.name`
+  - FR : Centres de table
+  - EN : Centrepieces
+  - AR : زينة الطاولات
+- `decoration.items.1.text`
+  - FR : Vases hauts et roses blanches, bougies flottantes, miroirs et supports dorés.
+  - EN : Tall vases and white roses, floating candles, mirrors and gold stands.
+  - AR : مزهريات عالية وورد أبيض، شموع عائمة، مرايا وحوامل ذهبية.
+- `decoration.items.2.name`
+  - FR : Chandeliers & bougies
+  - EN : Candelabras & candles
+  - AR : الشمعدانات والشموع
+- `decoration.items.2.text`
+  - FR : Chandeliers dorés, candélabres en cristal et rangées de bougies.
+  - EN : Gold candelabras, crystal candelabras and rows of candles.
+  - AR : شمعدانات ذهبية، شمعدانات كريستال وصفوف من الشموع.
+- `decoration.items.3.name`
+  - FR : Trône & canapé des mariés
+  - EN : The couple's throne & sofa
+  - AR : عرش وأريكة العروسين
+- `decoration.items.3.text`
+  - FR : Canapé capitonné blanc et or, chaises des mariés, fond de scène fleuri.
+  - EN : Tufted white and gold sofa, bridal chairs, floral backdrop.
+  - AR : أريكة بيضاء مبطنة بإطار ذهبي، كراسي العروسين، وخلفية مزهرة.
+- `decoration.items.4.name`
+  - FR : Panneaux & miroirs personnalisés
+  - EN : Personalised signs & mirrors
+  - AR : لوحات ومرايا بأسمائكم
+- `decoration.items.4.text`
+  - FR : Panneau de bienvenue et miroirs à vos prénoms et à la date du mariage.
+  - EN : Welcome sign and mirrors with your names and wedding date.
+  - AR : لوحة ترحيب ومرايا بأسماء العروسين وتاريخ العرس.
+- `decoration.items.5.name`
+  - FR : Éclairage
+  - EN : Lighting
+  - AR : الإضاءة
+- `decoration.items.5.text`
+  - FR : Lumières d'ambiance et bougies pour sublimer la salle à la tombée de la nuit.
+  - EN : Ambient light and candles to bring the room to life as night falls.
+  - AR : إضاءة هادئة وشموع تُبرز جمال القاعة عند حلول الليل.
+
+### rental
+
+- `rental.eyebrow`
+  - FR : 003 — Location de matériel
+  - EN : 003 — Equipment hire
+  - AR : 003 — تأجير المعدات
+- `rental.title`
+  - FR : Le matériel de nos mariages, à louer
+  - EN : The pieces from our weddings, to hire
+  - AR : معدات أعراسنا، للتأجير
+- `rental.text`
+  - FR : Le matériel que vous voyez dans nos réalisations se loue seul ou avec nos prestations de traiteur et de décoration. Ajoutez des articles à votre demande : ils apparaissent dans le formulaire de devis.
+  - EN : The equipment you see in our weddings can be hired on its own or with our catering and decoration. Add items to your request: they appear in the quote form.
+  - AR : المعدات التي ترونها في أعمالنا تؤجَّر وحدها أو مع خدمات التموين والديكور. أضيفوا القطع إلى طلبكم: ستظهر في استمارة عرض السعر.
+- `rental.filterLabel`
+  - FR : Catégories
+  - EN : Categories
+  - AR : الفئات
+- `rental.all`
+  - FR : Tout
+  - EN : All
+  - AR : الكل
+- `rental.cats.mobilier`
+  - FR : Mobilier
+  - EN : Furniture
+  - AR : الأثاث
+- `rental.cats.lumiere`
+  - FR : Lumière
+  - EN : Lighting
+  - AR : الإضاءة
+- `rental.cats.floral`
+  - FR : Décor floral
+  - EN : Florals
+  - AR : تنسيق الورد
+- `rental.cats.table`
+  - FR : Art de la table
+  - EN : Tableware
+  - AR : أدوات المائدة
+- `rental.cats.service`
+  - FR : Service & buffet
+  - EN : Service & buffet
+  - AR : الخدمة والبوفيه
+- `rental.units.piece`
+  - FR : l'unité
+  - EN : per item
+  - AR : للقطعة
+- `rental.units.table`
+  - FR : la table
+  - EN : per table
+  - AR : للطاولة
+- `rental.units.guest`
+  - FR : par invité
+  - EN : per guest
+  - AR : للضيف
+- `rental.units.set`
+  - FR : le lot
+  - EN : per set
+  - AR : للمجموعة
+- `rental.from`
+  - FR : À partir de
+  - EN : From
+  - AR : ابتداءً من
+- `rental.onRequest`
+  - FR : Prix sur demande
+  - EN : Price on request
+  - AR : السعر عند الطلب
+- `rental.add`
+  - FR : Ajouter à ma demande
+  - EN : Add to my request
+  - AR : أضيفوا إلى طلبي
+- `rental.added`
+  - FR : Dans votre demande
+  - EN : In your request
+  - AR : في طلبكم
+- `rental.remove`
+  - FR : Retirer
+  - EN : Remove
+  - AR : إزالة
+- `rental.qty`
+  - FR : Quantité
+  - EN : Quantity
+  - AR : الكمية
+- `rental.decrease`
+  - FR : Retirer un
+  - EN : Remove one
+  - AR : إنقاص واحدة
+- `rental.increase`
+  - FR : Ajouter un
+  - EN : Add one
+  - AR : إضافة واحدة
+- `rental.barOne`
+  - FR : {n} article dans votre demande
+  - EN : {n} item in your request
+  - AR : {n} قطعة في طلبكم
+- `rental.barMany`
+  - FR : {n} articles dans votre demande
+  - EN : {n} items in your request
+  - AR : {n} قطع في طلبكم
+- `rental.barCta`
+  - FR : Finaliser
+  - EN : Finish
+  - AR : إتمام الطلب
+- `rental.note`
+  - FR : Quantités indicatives : nous confirmons les disponibilités pour votre date.
+  - EN : Quantities are indicative: we confirm availability for your date.
+  - AR : الكميات تقريبية: نؤكد التوفر حسب تاريخ مناسبتكم.
+- `rental.items.trone.name`
+  - FR : Trône & canapé des mariés
+  - EN : Bridal throne & sofa
+  - AR : عرش وأريكة العروسين
+- `rental.items.trone.text`
+  - FR : Canapé capitonné blanc, cadre doré sculpté.
+  - EN : Tufted white sofa with a carved gold frame.
+  - AR : أريكة بيضاء مبطنة بإطار ذهبي منحوت.
+- `rental.items.chiavari.name`
+  - FR : Chaises Chiavari cristal
+  - EN : Crystal Chiavari chairs
+  - AR : كراسي شيافاري كريستال
+- `rental.items.chiavari.text`
+  - FR : Chaises transparentes, légères et élégantes.
+  - EN : Clear chairs, light and elegant.
+  - AR : كراسٍ شفافة، خفيفة وأنيقة.
+- `rental.items.tapis.name`
+  - FR : Tapis d'entrée oriental
+  - EN : Oriental entrance carpet
+  - AR : سجادة دخول شرقية
+- `rental.items.tapis.text`
+  - FR : Tapis rouge brodé et potelets dorés pour l'arrivée des mariés.
+  - EN : Embroidered red carpet and gold posts for the couple's entrance.
+  - AR : سجادة حمراء مطرزة وأعمدة ذهبية لدخول العروسين.
+- `rental.items.chandelier-dore.name`
+  - FR : Chandelier doré
+  - EN : Gold candelabra
+  - AR : شمعدان ذهبي
+- `rental.items.chandelier-dore.text`
+  - FR : Grand chandelier doré à plusieurs branches.
+  - EN : Tall gold candelabra with several arms.
+  - AR : شمعدان ذهبي كبير بعدة أذرع.
+- `rental.items.candelabre-cristal.name`
+  - FR : Candélabre en cristal
+  - EN : Crystal candelabra
+  - AR : شمعدان كريستال
+- `rental.items.candelabre-cristal.text`
+  - FR : Candélabre transparent à cinq bougies, pour les tables d'honneur.
+  - EN : Clear five-candle candelabra for the head tables.
+  - AR : شمعدان شفاف بخمس شمعات لطاولات الشرف.
+- `rental.items.photophore.name`
+  - FR : Photophore à bougie flottante
+  - EN : Floating candle holder
+  - AR : حامل شمعة عائمة
+- `rental.items.photophore.text`
+  - FR : Cylindre en verre et bougie flottante, posé sur miroir rond.
+  - EN : Glass cylinder and floating candle on a round mirror.
+  - AR : أسطوانة زجاجية وشمعة عائمة على مرآة دائرية.
+- `rental.items.arche.name`
+  - FR : Arche de fleurs blanches
+  - EN : White flower arch
+  - AR : قوس من الورد الأبيض
+- `rental.items.arche.text`
+  - FR : Arche fleurie pour l'entrée, la cérémonie ou les photos.
+  - EN : Flower arch for the entrance, the ceremony or photos.
+  - AR : قوس مزهر للمدخل أو المراسم أو الصور.
+- `rental.items.centre-table.name`
+  - FR : Centre de table roses blanches
+  - EN : White rose centrepiece
+  - AR : زينة طاولة بالورد الأبيض
+- `rental.items.centre-table.text`
+  - FR : Vase haut et bouquet de roses blanches.
+  - EN : Tall vase and a bouquet of white roses.
+  - AR : مزهرية عالية وباقة من الورد الأبيض.
+- `rental.items.support-dore.name`
+  - FR : Support géométrique doré
+  - EN : Gold geometric stand
+  - AR : حامل ذهبي هندسي
+- `rental.items.support-dore.text`
+  - FR : Structure dorée pour fleurs ou bougie flottante.
+  - EN : Gold frame for flowers or a floating candle.
+  - AR : هيكل ذهبي للورد أو لشمعة عائمة.
+- `rental.items.art-table.name`
+  - FR : Art de la table doré
+  - EN : Gold tableware
+  - AR : أدوات مائدة ذهبية
+- `rental.items.art-table.text`
+  - FR : Assiettes blanches, couverts dorés, verres en cristal ciselé.
+  - EN : White plates, gold cutlery, cut crystal glasses.
+  - AR : صحون بيضاء، أدوات مائدة ذهبية، كؤوس كريستال منقوشة.
+- `rental.items.nappage.name`
+  - FR : Nappage & housses
+  - EN : Linen & covers
+  - AR : مفارش وأغطية
+- `rental.items.nappage.text`
+  - FR : Nappes blanches et housses pour tables rondes.
+  - EN : White tablecloths and covers for round tables.
+  - AR : مفارش بيضاء وأغطية للطاولات المستديرة.
+- `rental.items.cloche.name`
+  - FR : Cloche de service argentée
+  - EN : Silver serving cloche
+  - AR : غطاء تقديم فضي
+- `rental.items.cloche.text`
+  - FR : Plat et cloche ciselés pour un service à l'orientale.
+  - EN : Engraved dish and cloche for Oriental-style service.
+  - AR : صحن وغطاء منقوشان للتقديم على الطريقة الشرقية.
+- `rental.items.presentoirs.name`
+  - FR : Présentoirs de buffet
+  - EN : Buffet stands
+  - AR : حوامل البوفيه
+- `rental.items.presentoirs.text`
+  - FR : Présentoirs en plexi givré pour verrines et douceurs.
+  - EN : Frosted acrylic stands for verrines and sweets.
+  - AR : حوامل من الأكريليك المصنفر للكؤوس الصغيرة والحلويات.
+
+### gallery
+
+- `gallery.eyebrow`
+  - FR : Réalisations
+  - EN : Our weddings
+  - AR : أعمالنا
+- `gallery.title`
+  - FR : Nos mariages, tels qu'ils ont été
+  - EN : Our weddings, as they were
+  - AR : أعراسنا، كما كانت
+- `gallery.text`
+  - FR : Des images prises le jour J, dans les salles et les domaines où nous avons dressé les tables.
+  - EN : Images taken on the day, in the venues and estates where we set the tables.
+  - AR : صور التُقطت يوم العرس، في القاعات والضيعات التي جهّزنا فيها الموائد.
+- `gallery.filterLabel`
+  - FR : Filtrer les réalisations
+  - EN : Filter our weddings
+  - AR : تصفية الأعمال
+- `gallery.filters.all`
+  - FR : Tout
+  - EN : All
+  - AR : الكل
+- `gallery.filters.traiteur`
+  - FR : Traiteur
+  - EN : Catering
+  - AR : التموين
+- `gallery.filters.decoration`
+  - FR : Décoration
+  - EN : Decoration
+  - AR : الديكور
+- `gallery.filters.salle`
+  - FR : Salles
+  - EN : Venues
+  - AR : القاعات
+- `gallery.open`
+  - FR : Agrandir
+  - EN : Enlarge
+  - AR : تكبير
+- `gallery.close`
+  - FR : Fermer
+  - EN : Close
+  - AR : إغلاق
+- `gallery.prev`
+  - FR : Image précédente
+  - EN : Previous image
+  - AR : الصورة السابقة
+- `gallery.next`
+  - FR : Image suivante
+  - EN : Next image
+  - AR : الصورة التالية
+- `gallery.instagram`
+  - FR : Toutes nos réalisations sur Instagram
+  - EN : All our weddings on Instagram
+  - AR : كل أعمالنا على إنستغرام
+
+### reviews
+
+- `reviews.eyebrow`
+  - FR : Avis clients
+  - EN : Reviews
+  - AR : آراء العملاء
+- `reviews.title`
+  - FR : Ce qu'en disent les mariés
+  - EN : In the couples' words
+  - AR : بكلمات العرسان
+- `reviews.source`
+  - FR : Avis de mariés, partagé sur notre Instagram
+  - EN : Review from a couple, shared on our Instagram
+  - AR : رأي عروسين، نُشر على إنستغرام
+- `reviews.original`
+  - FR : Avis original, en français
+  - EN : Original review, in French
+  - AR : الرأي الأصلي بالفرنسية
+- `reviews.translation`
+  - FR : 
+  - EN : A huge thank you to the Sud Event team for turning our wedding into a real fairy tale! The decoration was absolutely sublime, every detail perfectly thought out and carried out. […] Your professionalism is remarkable: responsive, available, attentive, and above all incredibly accommodating. […] You are much more than a simple supplier, you are true artists […] I recommend Sud Event with my eyes closed.
+  - AR : شكرًا جزيلًا لفريق سود إيفنت لأنهم حوّلوا عرسنا إلى حكاية خيالية حقيقية! كان الديكور رائعًا للغاية، وكل تفصيل مدروس ومنفَّذ بإتقان. […] احترافيتكم لافتة: سرعة في الرد، حضور، إصغاء، وفوق كل شيء مرونة لا تُصدَّق. […] أنتم أكثر بكثير من مجرد مقدّمي خدمة، أنتم فنانون حقيقيون […] أنصح بسود إيفنت وأنا مغمض العينين.
+
+### partners
+
+- `partners.eyebrow`
+  - FR : Ils travaillent avec nous
+  - EN : They work with us
+  - AR : يعملون معنا
+- `partners.title`
+  - FR : Nos partenaires
+  - EN : Our partners
+  - AR : شركاؤنا
+- `partners.text`
+  - FR : Des prestataires que nous retrouvons sur nos mariages, pour compléter votre journée.
+  - EN : Suppliers we often meet at our weddings, to complete your day.
+  - AR : مقدّمو خدمات نلتقيهم كثيرًا في أعراسنا، لإكمال يومكم.
+- `partners.roles.dj`
+  - FR : DJ
+  - EN : DJ
+  - AR : دي جي
+- `partners.roles.negafa`
+  - FR : Negafa, tenues de mariée orientales
+  - EN : Negafa, Oriental bridal outfits
+  - AR : نكافة، أزياء العروس الشرقية
+
+### zone
+
+- `zone.eyebrow`
+  - FR : Zone d'intervention
+  - EN : Where we work
+  - AR : مناطق عملنا
+- `zone.title`
+  - FR : Dans tout le Sud, de la Provence à l'Hérault
+  - EN : Across the South, from Provence to Hérault
+  - AR : في كل الجنوب، من بروفانس إلى إيرو
+- `zone.text`
+  - FR : Nous intervenons pour les mariages et les événements dans le Vaucluse, les Bouches-du-Rhône et l'Hérault, en salle de réception, dans un domaine ou en plein air. Votre lieu est ailleurs ? Demandez-nous.
+  - EN : We cater and decorate weddings and events in the Vaucluse, Bouches-du-Rhône and Hérault, in reception halls, estates or outdoors. Your venue is elsewhere? Ask us.
+  - AR : نعمل في الأعراس والمناسبات في فوكلوز وبوش دو رون وإيرو، في قاعات الاستقبال أو الضيعات أو في الهواء الطلق. مكانكم في منطقة أخرى؟ اسألونا.
+- `zone.cities`
+  - FR : Villes
+  - EN : Cities
+  - AR : المدن
+
+### faq
+
+- `faq.eyebrow`
+  - FR : Questions fréquentes
+  - EN : Questions
+  - AR : أسئلة شائعة
+- `faq.title`
+  - FR : Bon à savoir
+  - EN : Good to know
+  - AR : معلومات مفيدة
+- `faq.items.0.q`
+  - FR : Intervenez-vous dans ma ville ?
+  - EN : Do you work in my town?
+  - AR : هل تعملون في مدينتي؟
+- `faq.items.0.a`
+  - FR : Nous intervenons dans le Vaucluse (84), les Bouches-du-Rhône (13) et l'Hérault (34) : Avignon, Carpentras, Orange, Marseille, Aix-en-Provence, Arles, Montpellier, Béziers et leurs alentours. Pour un autre lieu, posez-nous la question.
+  - EN : We work in the Vaucluse (84), Bouches-du-Rhône (13) and Hérault (34): Avignon, Carpentras, Orange, Marseille, Aix-en-Provence, Arles, Montpellier, Béziers and the surrounding areas. For another venue, just ask.
+  - AR : نعمل في فوكلوز (84) وبوش دو رون (13) وإيرو (34): أفينيون، كاربنتراس، أورانج، مرسيليا، إكس أون بروفانس، آرل، مونبلييه، بيزييه وضواحيها. لمكان آخر، اسألونا.
+- `faq.items.1.q`
+  - FR : Peut-on réserver le traiteur et la décoration ensemble ?
+  - EN : Can we book catering and decoration together?
+  - AR : هل يمكن حجز التموين والديكور معًا؟
+- `faq.items.1.a`
+  - FR : Oui, c'est notre façon préférée de travailler : une seule équipe pour la cuisine, le service et la décoration, avec un devis unique. Vous pouvez aussi ne réserver que l'un des deux.
+  - EN : Yes, it is our favourite way to work: one team for the food, the service and the decoration, with a single quote. You can also book just one of the two.
+  - AR : نعم، وهذه طريقتنا المفضلة في العمل: فريق واحد للمطبخ والخدمة والديكور، مع عرض سعر واحد. ويمكنكم أيضًا حجز أحدهما فقط.
+- `faq.items.2.q`
+  - FR : Peut-on louer le matériel sans prestation ?
+  - EN : Can we hire equipment without a service?
+  - AR : هل يمكن تأجير المعدات دون خدمة؟
+- `faq.items.2.a`
+  - FR : Oui. Chaises, nappage, art de la table, chandeliers, arches et présentoirs se louent seuls. Ajoutez les articles à votre demande depuis notre catalogue de location.
+  - EN : Yes. Chairs, linen, tableware, candelabras, arches and stands can be hired on their own. Add items to your request from our hire catalogue.
+  - AR : نعم. الكراسي والمفارش وأدوات المائدة والشمعدانات والأقواس والحوامل تؤجَّر وحدها. أضيفوا القطع إلى طلبكم من كتالوج التأجير.
+- `faq.items.3.q`
+  - FR : Préparez-vous des mariages orientaux ?
+  - EN : Do you do Oriental weddings?
+  - AR : هل تحضّرون أعراسًا شرقية؟
+- `faq.items.3.a`
+  - FR : Oui, une grande partie de nos mariages sont orientaux ou mixtes : plats servis sous cloche, buffets de fruits, trône des mariés, tapis d'entrée. Nous composons le menu et le décor avec vous.
+  - EN : Yes, many of our weddings are Oriental or mixed: dishes served under cloches, fruit buffets, the couple's throne, entrance carpet. We build the menu and the decoration with you.
+  - AR : نعم، جزء كبير من أعراسنا شرقية أو مختلطة: أطباق تحت أغطية فضية، بوفيهات فواكه، عرش العروسين، سجادة الدخول. نعدّ القائمة والديكور معكم.
+- `faq.items.4.q`
+  - FR : Comment obtenir un devis ?
+  - EN : How do I get a quote?
+  - AR : كيف أحصل على عرض سعر؟
+- `faq.items.4.a`
+  - FR : Remplissez le formulaire de demande de devis : date, lieu, nombre d'invités et de tables, prestation souhaitée. Votre demande nous arrive sur WhatsApp et nous revenons vers vous avec une proposition.
+  - EN : Fill in the quote form: date, venue, number of guests and tables, the service you need. Your request reaches us on WhatsApp and we come back to you with a proposal.
+  - AR : املؤوا استمارة طلب عرض السعر: التاريخ، المكان، عدد الضيوف والطاولات، والخدمة المطلوبة. يصلنا طلبكم على واتساب ونعود إليكم باقتراح.
+
+### quote
+
+- `quote.eyebrow`
+  - FR : Demande de devis
+  - EN : Request a quote
+  - AR : طلب عرض سعر
+- `quote.title`
+  - FR : Parlons de votre événement
+  - EN : Tell us about your event
+  - AR : حدّثونا عن مناسبتكم
+- `quote.text`
+  - FR : Quelques informations suffisent pour préparer votre devis : la date, le lieu, le nombre de tables à décorer et la prestation souhaitée. Votre demande nous parvient directement sur WhatsApp.
+  - EN : A few details are enough to prepare your quote: the date, the venue, the number of tables to decorate and the service you need. Your request reaches us directly on WhatsApp.
+  - AR : تكفي بعض المعلومات لإعداد عرض السعر: التاريخ، المكان، عدد الطاولات المراد تزيينها والخدمة المطلوبة. يصلنا طلبكم مباشرة على واتساب.
+- `quote.direct`
+  - FR : Vous préférez nous écrire directement ?
+  - EN : Prefer to write to us directly?
+  - AR : تفضّلون الكتابة إلينا مباشرة؟
+- `quote.call`
+  - FR : Appeler
+  - EN : Call
+  - AR : اتصال
+- `quote.steps.event`
+  - FR : Votre événement
+  - EN : Your event
+  - AR : مناسبتكم
+- `quote.steps.service`
+  - FR : Votre prestation
+  - EN : Your service
+  - AR : الخدمة المطلوبة
+- `quote.steps.contact`
+  - FR : Vos coordonnées
+  - EN : Your details
+  - AR : معلومات التواصل
+- `quote.fields.eventType`
+  - FR : Type d'événement
+  - EN : Type of event
+  - AR : نوع المناسبة
+- `quote.fields.eventTypes.wedding`
+  - FR : Mariage
+  - EN : Wedding
+  - AR : عرس
+- `quote.fields.eventTypes.engagement`
+  - FR : Fiançailles
+  - EN : Engagement
+  - AR : خطوبة
+- `quote.fields.eventTypes.henna`
+  - FR : Henné
+  - EN : Henna night
+  - AR : حنّاء
+- `quote.fields.eventTypes.birthday`
+  - FR : Anniversaire
+  - EN : Birthday
+  - AR : عيد ميلاد
+- `quote.fields.eventTypes.corporate`
+  - FR : Entreprise
+  - EN : Corporate
+  - AR : مناسبة شركة
+- `quote.fields.eventTypes.other`
+  - FR : Autre
+  - EN : Other
+  - AR : أخرى
+- `quote.fields.date`
+  - FR : Date de l'événement
+  - EN : Event date
+  - AR : تاريخ المناسبة
+- `quote.fields.dateBooked`
+  - FR : Cette date est déjà réservée chez nous. Envoyez quand même votre demande : nous vous dirons ce qui reste possible.
+  - EN : This date is already booked with us. Send your request anyway: we will tell you what is still possible.
+  - AR : هذا التاريخ محجوز لدينا. أرسلوا طلبكم مع ذلك: سنخبركم بما يبقى ممكنًا.
+- `quote.fields.venue`
+  - FR : Lieu
+  - EN : Venue
+  - AR : المكان
+- `quote.fields.venuePlaceholder`
+  - FR : Salle, domaine ou ville…
+  - EN : Hall, estate or town…
+  - AR : قاعة أو ضيعة أو مدينة…
+- `quote.fields.guests`
+  - FR : Nombre d'invités
+  - EN : Number of guests
+  - AR : عدد الضيوف
+- `quote.fields.tables`
+  - FR : Nombre de tables à décorer
+  - EN : Number of tables to decorate
+  - AR : عدد الطاولات المراد تزيينها
+- `quote.fields.service`
+  - FR : Prestation souhaitée
+  - EN : Service needed
+  - AR : الخدمة المطلوبة
+- `quote.fields.services.deco`
+  - FR : Décoration
+  - EN : Decoration
+  - AR : الديكور
+- `quote.fields.services.traiteur`
+  - FR : Service traiteur
+  - EN : Catering
+  - AR : التموين
+- `quote.fields.services.both`
+  - FR : Les deux
+  - EN : Both
+  - AR : الاثنان معًا
+- `quote.fields.services.location`
+  - FR : Location seule
+  - EN : Hire only
+  - AR : التأجير فقط
+- `quote.fields.formula`
+  - FR : Formule traiteur
+  - EN : Catering package
+  - AR : باقة التموين
+- `quote.fields.formulaNone`
+  - FR : À définir ensemble
+  - EN : To be decided together
+  - AR : نحددها معًا
+- `quote.fields.items`
+  - FR : Articles de location
+  - EN : Hire items
+  - AR : قطع التأجير
+- `quote.fields.itemsEmpty`
+  - FR : Aucun article pour l'instant.
+  - EN : No items yet.
+  - AR : لا توجد قطع بعد.
+- `quote.fields.itemsBrowse`
+  - FR : Parcourir le catalogue
+  - EN : Browse the catalogue
+  - AR : تصفح الكتالوج
+- `quote.fields.budget`
+  - FR : Budget indicatif
+  - EN : Indicative budget
+  - AR : الميزانية التقريبية
+- `quote.fields.optional`
+  - FR : facultatif
+  - EN : optional
+  - AR : اختياري
+- `quote.fields.budgets.0`
+  - FR : Moins de 3 000 €
+  - EN : Under €3,000
+  - AR : أقل من 3000 €
+- `quote.fields.budgets.1`
+  - FR : 3 000 à 6 000 €
+  - EN : €3,000 to €6,000
+  - AR : من 3000 إلى 6000 €
+- `quote.fields.budgets.2`
+  - FR : 6 000 à 10 000 €
+  - EN : €6,000 to €10,000
+  - AR : من 6000 إلى 10000 €
+- `quote.fields.budgets.3`
+  - FR : Plus de 10 000 €
+  - EN : Over €10,000
+  - AR : أكثر من 10000 €
+- `quote.fields.budgets.4`
+  - FR : Je ne sais pas encore
+  - EN : Not sure yet
+  - AR : لا أعرف بعد
+- `quote.fields.budgetNone`
+  - FR : Non précisé
+  - EN : Not specified
+  - AR : غير محددة
+- `quote.fields.name`
+  - FR : Nom et prénom
+  - EN : Full name
+  - AR : الاسم الكامل
+- `quote.fields.phone`
+  - FR : Téléphone
+  - EN : Phone
+  - AR : الهاتف
+- `quote.fields.email`
+  - FR : E-mail
+  - EN : Email
+  - AR : البريد الإلكتروني
+- `quote.fields.message`
+  - FR : Message
+  - EN : Message
+  - AR : رسالة
+- `quote.fields.messagePlaceholder`
+  - FR : Vos couleurs, vos envies, le déroulé de la soirée…
+  - EN : Your colours, your wishes, how the evening will unfold…
+  - AR : ألوانكم، رغباتكم، برنامج السهرة…
+- `quote.required`
+  - FR : Champ obligatoire
+  - EN : Required field
+  - AR : حقل إلزامي
+- `quote.invalidPhone`
+  - FR : Numéro de téléphone invalide
+  - EN : Invalid phone number
+  - AR : رقم هاتف غير صالح
+- `quote.invalidEmail`
+  - FR : Adresse e-mail invalide
+  - EN : Invalid email address
+  - AR : بريد إلكتروني غير صالح
+- `quote.submit`
+  - FR : Envoyer ma demande sur WhatsApp
+  - EN : Send my request on WhatsApp
+  - AR : إرسال طلبي عبر واتساب
+- `quote.sending`
+  - FR : Préparation…
+  - EN : Preparing…
+  - AR : جارٍ التحضير…
+- `quote.hint`
+  - FR : WhatsApp s'ouvre avec le récapitulatif de votre demande : il ne reste qu'à appuyer sur Envoyer.
+  - EN : WhatsApp opens with a summary of your request: all you need to do is press Send.
+  - AR : يُفتح واتساب مع ملخص طلبكم: لا يبقى إلا الضغط على إرسال.
+- `quote.consent`
+  - FR : Vos informations servent uniquement à vous répondre et à établir votre devis.
+  - EN : Your details are only used to reply to you and prepare your quote.
+  - AR : تُستخدم معلوماتكم فقط للرد عليكم وإعداد عرض السعر.
+- `quote.success.thanks`
+  - FR : Merci
+  - EN : Thank you
+  - AR : شكرًا
+- `quote.success.title`
+  - FR : Votre demande est prête
+  - EN : Your request is ready
+  - AR : طلبكم جاهز
+- `quote.success.text`
+  - FR : WhatsApp s'est ouvert avec le récapitulatif de votre demande. Si rien ne s'est ouvert, utilisez le bouton ci-dessous.
+  - EN : WhatsApp has opened with a summary of your request. If nothing opened, use the button below.
+  - AR : فُتح واتساب مع ملخص طلبكم. إن لم يُفتح شيء، استخدموا الزر أدناه.
+- `quote.success.again`
+  - FR : Ouvrir WhatsApp
+  - EN : Open WhatsApp
+  - AR : فتح واتساب
+- `quote.success.reset`
+  - FR : Faire une autre demande
+  - EN : Make another request
+  - AR : طلب جديد
+- `quote.message.title`
+  - FR : Demande de devis Sud Events
+  - EN : Sud Events quote request
+  - AR : طلب عرض سعر من سود إيفنتس
+- `quote.message.event`
+  - FR : Événement
+  - EN : Event
+  - AR : المناسبة
+- `quote.message.date`
+  - FR : Date
+  - EN : Date
+  - AR : التاريخ
+- `quote.message.venue`
+  - FR : Lieu
+  - EN : Venue
+  - AR : المكان
+- `quote.message.guests`
+  - FR : Invités
+  - EN : Guests
+  - AR : الضيوف
+- `quote.message.tables`
+  - FR : Tables à décorer
+  - EN : Tables to decorate
+  - AR : الطاولات المراد تزيينها
+- `quote.message.service`
+  - FR : Prestation
+  - EN : Service
+  - AR : الخدمة
+- `quote.message.formula`
+  - FR : Formule
+  - EN : Package
+  - AR : الباقة
+- `quote.message.items`
+  - FR : Location
+  - EN : Hire
+  - AR : التأجير
+- `quote.message.budget`
+  - FR : Budget
+  - EN : Budget
+  - AR : الميزانية
+- `quote.message.name`
+  - FR : Nom
+  - EN : Name
+  - AR : الاسم
+- `quote.message.phone`
+  - FR : Téléphone
+  - EN : Phone
+  - AR : الهاتف
+- `quote.message.email`
+  - FR : E-mail
+  - EN : Email
+  - AR : البريد الإلكتروني
+- `quote.message.notes`
+  - FR : Message
+  - EN : Message
+  - AR : رسالة
+- `quote.message.ref`
+  - FR : Réf.
+  - EN : Ref.
+  - AR : مرجع
+- `quote.message.closing`
+  - FR : Merci, nous revenons vers vous très vite.
+  - EN : Thank you, we will get back to you very soon.
+  - AR : شكرًا لكم، سنعود إليكم قريبًا جدًا.
+
+### email
+
+- `email.subjectBusiness`
+  - FR : Nouvelle demande de devis
+  - EN : New quote request
+  - AR : طلب عرض سعر جديد
+- `email.subjectClient`
+  - FR : Votre demande de devis Sud Events
+  - EN : Your Sud Events quote request
+  - AR : طلب عرض السعر من سود إيفنتس
+- `email.intro`
+  - FR : Bonjour,  Nous avons bien reçu votre demande de devis, en voici le récapitulatif. Nous revenons vers vous très vite.  L'équipe Sud Events
+  - EN : Hello,  We have received your quote request, here is a summary. We will get back to you very soon.  The Sud Events team
+  - AR : مرحبًا،  وصلنا طلب عرض السعر، وهذا ملخصه. سنعود إليكم قريبًا جدًا.  فريق سود إيفنتس
+
+### whatsapp
+
+- `whatsapp.float`
+  - FR : Écrire à Sud Events sur WhatsApp
+  - EN : Message Sud Events on WhatsApp
+  - AR : راسلوا سود إيفنتس على واتساب
+- `whatsapp.hello`
+  - FR : Bonjour Sud Events, je souhaite des informations pour un événement.
+  - EN : Hello Sud Events, I would like some information about an event.
+  - AR : مرحبًا سود إيفنتس، أرغب في معلومات حول مناسبة.
+
+### footer
+
+- `footer.tagline`
+  - FR : Traiteur, décoration et location de matériel pour mariages et événements dans le Sud de la France.
+  - EN : Catering, decoration and equipment hire for weddings and events in the South of France.
+  - AR : تموين وديكور وتأجير معدات للأعراس والمناسبات في جنوب فرنسا.
+- `footer.contact`
+  - FR : Contact
+  - EN : Contact
+  - AR : تواصل
+- `footer.follow`
+  - FR : Suivre
+  - EN : Follow
+  - AR : تابعونا
+- `footer.zones`
+  - FR : Zones
+  - EN : Areas
+  - AR : المناطق
+- `footer.legal`
+  - FR : Mentions légales
+  - EN : Legal notice
+  - AR : الإشعار القانوني
+- `footer.rights`
+  - FR : Tous droits réservés
+  - EN : All rights reserved
+  - AR : جميع الحقوق محفوظة
+- `footer.photos`
+  - FR : Photos et vidéos : Sud Events
+  - EN : Photos and videos: Sud Events
+  - AR : الصور والفيديوهات: سود إيفنتس
+
+### legal
+
+- `legal.title`
+  - FR : Mentions légales
+  - EN : Legal notice
+  - AR : الإشعار القانوني
+- `legal.sections.0.title`
+  - FR : Éditeur du site
+  - EN : Publisher
+  - AR : ناشر الموقع
+- `legal.sections.0.text`
+  - FR : Sud Events, traiteur, décoration et location de matériel pour mariages et événements. Téléphone et WhatsApp : 07 83 67 90 92. Instagram : @sud_events.
+  - EN : Sud Events, catering, decoration and equipment hire for weddings and events. Phone and WhatsApp: +33 7 83 67 90 92. Instagram: @sud_events.
+  - AR : سود إيفنتس، تموين وديكور وتأجير معدات للأعراس والمناسبات. الهاتف وواتساب: ‎+33 7 83 67 90 92. إنستغرام: ‎@sud_events.
+- `legal.sections.1.title`
+  - FR : Hébergement
+  - EN : Hosting
+  - AR : الاستضافة
+- `legal.sections.1.text`
+  - FR : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.
+  - EN : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States.
+  - AR : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, الولايات المتحدة.
+- `legal.sections.2.title`
+  - FR : Données personnelles
+  - EN : Personal data
+  - AR : البيانات الشخصية
+- `legal.sections.2.text`
+  - FR : Les informations envoyées par le formulaire de devis servent uniquement à répondre à votre demande. Elles nous sont transmises par WhatsApp et, le cas échéant, par e-mail. Elles ne sont ni revendues ni utilisées à d'autres fins. Vous pouvez demander leur suppression à tout moment par téléphone ou par WhatsApp.
+  - EN : The details sent through the quote form are only used to answer your request. They reach us by WhatsApp and, where applicable, by email. They are never sold or used for any other purpose. You can ask for them to be deleted at any time by phone or WhatsApp.
+  - AR : تُستخدم المعلومات المرسلة عبر استمارة عرض السعر فقط للرد على طلبكم. تصلنا عبر واتساب، وعند الاقتضاء عبر البريد الإلكتروني، ولا تُباع ولا تُستعمل لأي غرض آخر. يمكنكم طلب حذفها في أي وقت بالهاتف أو عبر واتساب.
+- `legal.sections.3.title`
+  - FR : Photos
+  - EN : Photos
+  - AR : الصور
+- `legal.sections.3.text`
+  - FR : Les photos et vidéos du site sont issues des réalisations de Sud Events. Toute reproduction sans autorisation est interdite.
+  - EN : The photos and videos on this site come from Sud Events' own weddings. Reproduction without permission is prohibited.
+  - AR : صور وفيديوهات الموقع مأخوذة من أعمال سود إيفنتس. يُمنع نسخها دون إذن.
+- `legal.back`
+  - FR : Retour à l'accueil
+  - EN : Back to home
+  - AR : العودة إلى الصفحة الرئيسية
+
+### notFound
+
+- `notFound.title`
+  - FR : Page introuvable
+  - EN : Page not found
+  - AR : الصفحة غير موجودة
+- `notFound.text`
+  - FR : Cette page n'existe pas ou a été déplacée.
+  - EN : This page does not exist or has moved.
+  - AR : هذه الصفحة غير موجودة أو نُقلت.
+- `notFound.back`
+  - FR : Retour à l'accueil
+  - EN : Back to home
+  - AR : العودة إلى الصفحة الرئيسية
+
+### alt
+
+- `alt.trone-dore-bougies`
+  - FR : Canapé des mariés blanc et or devant un rideau de voilages et des bougies
+  - EN : White and gold bridal sofa in front of draped curtains and candles
+  - AR : أريكة العروسين البيضاء والذهبية أمام ستائر وشموع
+- `alt.salle-chandeliers-dores`
+  - FR : Salle de réception dressée avec de grands chandeliers dorés
+  - EN : Reception room set with tall gold candelabras
+  - AR : قاعة استقبال مجهزة بشمعدانات ذهبية عالية
+- `alt.chandelier-cristal-provence`
+  - FR : Table ronde en plein air avec candélabre en cristal, en Provence
+  - EN : Round outdoor table with a crystal candelabra in Provence
+  - AR : طاولة مستديرة في الهواء الطلق مع شمعدان كريستال في بروفانس
+- `alt.poulet-olives-amandes`
+  - FR : Poulet aux olives et aux amandes, plat oriental servi à table
+  - EN : Chicken with olives and almonds, an Oriental dish served at the table
+  - AR : دجاج بالزيتون واللوز، طبق شرقي يُقدَّم على الطاولة
+- `alt.buffet-fruits`
+  - FR : Buffet de fruits frais : bananes, oranges, pommes et bûche
+  - EN : Fresh fruit buffet: bananas, oranges, apples and a yule log
+  - AR : بوفيه فواكه طازجة: موز وبرتقال وتفاح
+- `alt.poulets-rotis`
+  - FR : Poulets rôtis aux olives sur assiettes blanches
+  - EN : Roast chickens with olives on white plates
+  - AR : دجاج مشوي بالزيتون في صحون بيضاء
+- `alt.buffet-salades-composees`
+  - FR : Buffet de salades composées sur présentoirs dorés
+  - EN : Composed salad buffet on gold stands
+  - AR : بوفيه سلطات متنوعة على حوامل ذهبية
+- `alt.tajine-poulet-amandes`
+  - FR : Tajine de poulet aux amandes et aux olives
+  - EN : Chicken tagine with almonds and olives
+  - AR : طاجين دجاج باللوز والزيتون
+- `alt.buffet-salades-pates`
+  - FR : Buffet de salades de pâtes, carottes et feuilletés
+  - EN : Pasta salad, carrot and pastry buffet
+  - AR : بوفيه سلطة معكرونة وجزر ومعجنات
+- `alt.buffet-piscine`
+  - FR : Buffet de douceurs dressé au bord d'une piscine
+  - EN : Sweet buffet set by a swimming pool
+  - AR : بوفيه حلويات بجانب المسبح
+- `alt.cocktails-bleus`
+  - FR : Cocktails bleus à la menthe sur présentoirs en plexi givré
+  - EN : Blue mint cocktails on frosted acrylic stands
+  - AR : كوكتيلات زرقاء بالنعناع على حوامل أكريليك
+- `alt.verrines-menthe`
+  - FR : Verrines de menthe fraîche alignées sur le buffet
+  - EN : Fresh mint verrines lined up on the buffet
+  - AR : كؤوس صغيرة بالنعناع الطازج على البوفيه
+- `alt.mini-pizzas`
+  - FR : Plateau de mini-pizzas et de feuilletés
+  - EN : Platter of mini pizzas and pastries
+  - AR : صينية بيتزا صغيرة ومعجنات
+- `alt.brownies-framboises`
+  - FR : Brownies aux framboises et myrtilles
+  - EN : Brownies with raspberries and blueberries
+  - AR : براونيز بالتوت والعليق
+- `alt.macarons-piscine`
+  - FR : Macarons et verrines bleues au bord de la piscine
+  - EN : Macarons and blue verrines by the pool
+  - AR : ماكرون وكؤوس زرقاء بجانب المسبح
+- `alt.gateau-fruits-rouges`
+  - FR : Gâteau aux fruits rouges entouré de coupes de fruits
+  - EN : Red berry cake surrounded by cups of fruit
+  - AR : كعكة بالفواكه الحمراء تحيط بها كؤوس الفاكهة
+- `alt.verrines-panna-cotta`
+  - FR : Verrines crémeuses à l'ananas sur présentoirs
+  - EN : Creamy pineapple verrines on stands
+  - AR : كؤوس كريمية بالأناناس على حوامل
+- `alt.mignardises-tartelettes`
+  - FR : Tartelettes aux fruits et mignardises sur le buffet
+  - EN : Fruit tartlets and petits fours on the buffet
+  - AR : تارت بالفواكه وحلويات صغيرة على البوفيه
+- `alt.buffet-patisseries`
+  - FR : Buffet de pâtisseries, brownies et tartelettes
+  - EN : Pastry buffet with brownies and tartlets
+  - AR : بوفيه معجنات وبراونيز وتارت
+- `alt.chaises-maries-arche-roses`
+  - FR : Chaises des mariés blanches et dorées sous une arche de roses
+  - EN : White and gold bridal chairs under an arch of roses
+  - AR : كرسيّا العروسين الأبيض والذهبي تحت قوس من الورد
+- `alt.bougie-flottante-centre-table`
+  - FR : Centre de table avec bougie flottante sur miroir rond
+  - EN : Centrepiece with a floating candle on a round mirror
+  - AR : زينة طاولة بشمعة عائمة على مرآة دائرية
+- `alt.roses-blanches-bougies`
+  - FR : Couronne de roses blanches et bougie sur la table d'honneur
+  - EN : Wreath of white roses and a candle on the head table
+  - AR : إكليل من الورد الأبيض وشمعة على طاولة الشرف
+- `alt.centre-table-roses-hautes`
+  - FR : Centre de table haut de roses blanches, salle dressée
+  - EN : Tall white rose centrepiece in a set room
+  - AR : زينة طاولة عالية من الورد الأبيض في قاعة مجهزة
+- `alt.vases-dores-fleurs`
+  - FR : Vases dorés et bouquets de roses sur table dressée
+  - EN : Gold vases and rose bouquets on a set table
+  - AR : مزهريات ذهبية وباقات ورد على طاولة مجهزة
+- `alt.bougies-salle-vases-dores`
+  - FR : Table dressée aux vases dorés, bougies au fond de la salle
+  - EN : Table with gold vases, candles at the back of the room
+  - AR : طاولة بمزهريات ذهبية وشموع في عمق القاعة
+- `alt.support-dore-bougie-flottante`
+  - FR : Support géométrique doré avec fleurs et bougie flottante
+  - EN : Gold geometric stand with flowers and a floating candle
+  - AR : حامل ذهبي هندسي بالورد وشمعة عائمة
+- `alt.table-dressee-or`
+  - FR : Table ronde dressée, couverts dorés et bougies
+  - EN : Round table set with gold cutlery and candles
+  - AR : طاولة مستديرة مجهزة بأدوات ذهبية وشموع
+- `alt.arche-fleurs-entree`
+  - FR : Arche de fleurs blanches à l'entrée de la salle
+  - EN : White flower arch at the entrance of the hall
+  - AR : قوس من الورد الأبيض عند مدخل القاعة
+- `alt.chaises-trone-mariage-plein-air`
+  - FR : Table en plein air sous un bouquet de roses, vue sur la campagne
+  - EN : Outdoor table under a rose bouquet, countryside view
+  - AR : طاولة في الهواء الطلق تحت باقة ورد مطلة على الريف
+- `alt.table-roses-candelabres`
+  - FR : Table dressée aux roses blanches et candélabres dorés
+  - EN : Table set with white roses and gold candelabras
+  - AR : طاولة مزينة بالورد الأبيض وشمعدانات ذهبية
+- `alt.table-roses-arches-lumineuses`
+  - FR : Table ronde aux roses blanches, couverts dorés, canapé des mariés et arches lumineuses
+  - EN : Round table with white roses, gold cutlery, bridal sofa and illuminated arches
+  - AR : طاولة مستديرة بالورد الأبيض وأدوات ذهبية وأريكة العروسين وأقواس مضيئة
+- `alt.salle-voilages-lustres`
+  - FR : Salle sous voilages blancs et lustres, tables dressées
+  - EN : Room under white draping and chandeliers, tables set
+  - AR : قاعة تحت ستائر بيضاء وثريات، والطاولات مجهزة
+- `alt.salle-tables-rondes`
+  - FR : Tables rondes nappées de blanc et chaises en cristal
+  - EN : Round tables dressed in white with crystal chairs
+  - AR : طاولات مستديرة بمفارش بيضاء وكراسٍ كريستالية
+- `alt.salle-dressee-vases-dores`
+  - FR : Salle dressée aux vases dorés et chaises transparentes
+  - EN : Room set with gold vases and clear chairs
+  - AR : قاعة مجهزة بمزهريات ذهبية وكراسٍ شفافة
+- `alt.salle-candelabres-dores`
+  - FR : Salle de réception aux candélabres dorés et chaises cristal
+  - EN : Reception room with gold candelabras and crystal chairs
+  - AR : قاعة استقبال بشمعدانات ذهبية وكراسٍ كريستالية
+- `alt.tapis-rouge-entree`
+  - FR : Tapis rouge brodé et potelets dorés à l'entrée de la salle
+  - EN : Embroidered red carpet and gold posts at the entrance
+  - AR : سجادة حمراء مطرزة وأعمدة ذهبية عند المدخل
+- `alt.reception-plein-air-provence`
+  - FR : Réception en plein air, tables rondes et arche de fleurs
+  - EN : Outdoor reception with round tables and a flower arch
+  - AR : حفل في الهواء الطلق بطاولات مستديرة وقوس ورد
+- `alt.table-piscine-vue`
+  - FR : Table d'honneur fleurie au bord de la piscine, vue sur les collines
+  - EN : Flowered head table by the pool, overlooking the hills
+  - AR : طاولة الشرف المزهرة بجانب المسبح مطلة على التلال
+- `alt.tables-dressees-fleurs`
+  - FR : Tables dressées de roses blanches et couverts dorés
+  - EN : Tables set with white roses and gold cutlery
+  - AR : طاولات مزينة بالورد الأبيض وأدوات ذهبية
+- `alt.serveuse-plateau-fumee`
+  - FR : Serveuse portant un plateau de salades dans un nuage de fumée
+  - EN : Waitress carrying a salad platter in a cloud of smoke
+  - AR : نادلة تحمل صينية سلطات في سحابة من الدخان
+- `alt.serveur-plateau-salle`
+  - FR : Serveur portant un plateau de salades dans la salle
+  - EN : Waiter carrying a salad platter through the room
+  - AR : نادل يحمل صينية سلطات في القاعة
+- `alt.serveuse-plateau-salades`
+  - FR : Serveuse apportant les plateaux aux tables
+  - EN : Waitress bringing the platters to the tables
+  - AR : نادلة تحمل الصواني إلى الطاولات
+- `alt.service-cloches-jardin`
+  - FR : Équipe Sud Events présentant les plats sous cloche dans le jardin
+  - EN : Sud Events team presenting dishes under cloches in the garden
+  - AR : فريق سود إيفنتس يقدّم الأطباق تحت الأغطية في الحديقة
+- `alt.serveuse-poulet-piscine`
+  - FR : Buffet au bord de la piscine, nappe au logo Sud Events
+  - EN : Poolside buffet with a Sud Events logo table cover
+  - AR : بوفيه بجانب المسبح وغطاء طاولة بشعار سود إيفنتس
+- `alt.etincelles-fumee`
+  - FR : Entrée des mariés avec fontaines d'étincelles et fumée lourde
+  - EN : The couple's entrance with spark fountains and low smoke
+  - AR : دخول العروسين بين نوافير الشرر والدخان
+- `alt.piste-voilages-lumieres`
+  - FR : Piste de danse sous un plafond de voilages et guirlandes lumineuses
+  - EN : Dance floor under a ceiling of draping and string lights
+  - AR : حلبة الرقص تحت سقف من الستائر والأضواء
+- `alt.soiree-jardin`
+  - FR : Soirée au bord de la piscine, table au logo Sud Events
+  - EN : Evening by the pool, table with the Sud Events logo
+  - AR : سهرة بجانب المسبح، طاولة بشعار سود إيفنتس
+- `alt.trone-canape-dore`
+  - FR : Canapé des mariés capitonné blanc au cadre doré sculpté
+  - EN : Tufted white bridal sofa with a carved gold frame
+  - AR : أريكة العروسين البيضاء المبطنة بإطار ذهبي منحوت
+- `alt.chandelier-dore-5-branches`
+  - FR : Grand chandelier doré sur table dressée
+  - EN : Tall gold candelabra on a set table
+  - AR : شمعدان ذهبي كبير على طاولة مجهزة
+- `alt.chandelier-cristal`
+  - FR : Candélabre en cristal sur table ronde en plein air
+  - EN : Crystal candelabra on a round outdoor table
+  - AR : شمعدان كريستال على طاولة مستديرة في الهواء الطلق
+- `alt.arche-fleurs-blanches`
+  - FR : Arche de fleurs blanches
+  - EN : White flower arch
+  - AR : قوس من الورد الأبيض
+- `alt.centre-table-vase-haut`
+  - FR : Centre de table, vase haut et roses blanches
+  - EN : Centrepiece, tall vase and white roses
+  - AR : زينة طاولة، مزهرية عالية وورد أبيض
+- `alt.cloche-argent`
+  - FR : Pastillas servies sous cloches argentées
+  - EN : Pastillas served under silver cloches
+  - AR : بسطيلة تُقدَّم تحت أغطية فضية
+- `alt.presentoirs-plexi`
+  - FR : Présentoirs en plexi givré garnis de verrines
+  - EN : Frosted acrylic stands filled with verrines
+  - AR : حوامل أكريليك مليئة بالكؤوس الصغيرة
+- `alt.photophore-bougie-flottante`
+  - FR : Photophore en verre avec bougie flottante
+  - EN : Glass holder with a floating candle
+  - AR : حامل زجاجي بشمعة عائمة
+- `alt.art-de-la-table-dore`
+  - FR : Assiettes blanches et couverts dorés sur table ronde
+  - EN : White plates and gold cutlery on a round table
+  - AR : صحون بيضاء وأدوات ذهبية على طاولة مستديرة
+- `alt.tapis-rouge`
+  - FR : Tapis d'entrée rouge brodé
+  - EN : Embroidered red entrance carpet
+  - AR : سجادة دخول حمراء مطرزة
+- `alt.chaises-chiavari-cristal`
+  - FR : Chaise Chiavari en cristal près d'une table nappée
+  - EN : Crystal Chiavari chair beside a dressed table
+  - AR : كرسي شيافاري كريستال بجانب طاولة مجهزة
+- `alt.support-geometrique-dore`
+  - FR : Support géométrique doré garni de roses
+  - EN : Gold geometric stand filled with roses
+  - AR : حامل ذهبي هندسي مزين بالورد
+- `alt.pastillas-cloches-argent`
+  - FR : Pastillas aux fruits de mer sous cloches argentées ciselées
+  - EN : Seafood pastillas under engraved silver cloches
+  - AR : بسطيلة بفواكه البحر تحت أغطية فضية منقوشة
+- `alt.pastilla-fruits-de-mer`
+  - FR : Pastilla aux fruits de mer garnie de crevettes
+  - EN : Seafood pastilla topped with prawns
+  - AR : بسطيلة بفواكه البحر مزينة بالقريدس

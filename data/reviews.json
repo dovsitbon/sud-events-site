@@ -1,0 +1,13 @@
+{
+  "_note": "Seul l'avis publié en story « Avis client » sur Instagram est réel. Ajouter les suivants ici, avec published: true, quand Sud Events les fournit.",
+  "reviews": [
+    {
+      "id": "conte-de-fees",
+      "published": true,
+      "source": "instagram",
+      "author": null,
+      "event": "wedding",
+      "text": "Un immense merci à l'équipe de Sud Event pour avoir transformé notre mariage en un véritable conte de fées ! La décoration était absolument sublime, chaque détail parfaitement pensé et exécuté. […] Votre professionnalisme est remarquable : réactifs, disponibles, à l'écoute, et surtout incroyablement arrangeants. […] Vous êtes bien plus qu'un simple prestataire, vous êtes de véritables artistes […] Je recommande Sud Event les yeux fermés."
+    }
+  ]
+}

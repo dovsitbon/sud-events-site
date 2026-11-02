@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "title": "Wedding Catering & Decoration in Provence, Vaucluse, Bouches-du-Rhône & Hérault | Sud Events",
+    "description": "Sud Events: catering, decoration and equipment hire for Oriental and mixed weddings in Avignon, Marseille, Aix-en-Provence and Montpellier, South of France. Request a quote.",
+    "legalTitle": "Legal notice | Sud Events",
+    "legalDescription": "Legal notice and personal data for the Sud Events website, wedding catering and decoration."
+  },
+  "nav": {
+    "traiteur": "Catering",
+    "decoration": "Decoration",
+    "location": "Hire",
+    "realisations": "Weddings",
+    "avis": "Reviews",
+    "contact": "Contact",
+    "quote": "Request a quote",
+    "quoteShort": "Quote",
+    "menu": "Menu",
+    "close": "Close menu",
+    "home": "Sud Events, home",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+  "intro": {
+    "skip": "Skip"
+  },
+  "hero": {
+    "eyebrow": "Catering · Decoration · Hire — South of France",
+    "title": "Your wedding, from the first dish to the last candle",
+    "cta": "Request a quote",
+    "whatsapp": "WhatsApp",
+    "scroll": "Discover",
+    "alt": "White and gold bridal sofa in front of draped curtains lit with candles, decoration by Sud Events"
+  },
+  "manifesto": {
+    "eyebrow": "The house",
+    "title": "A caterer and a decorator, under one name.",
+    "text": "At Sud Events, food and decoration are designed together. The colours of the room answer the dishes, the centrepieces leave room for the platters, and one team looks after everything, from set-up to the last course. On the day, you have a single contact, and everything fits.",
+    "link": "Our three crafts"
+  },
+  "trades": {
+    "eyebrow": "What we do",
+    "title": "Three crafts, one wedding day",
+    "items": [
+      {
+        "id": "traiteur",
+        "name": "Catering",
+        "text": "Carved fruit buffets, composed salads, verrines, petits fours, tiered cakes and dishes served at the table by our waiters."
+      },
+      {
+        "id": "decoration",
+        "name": "Decoration",
+        "text": "White flower arches, candelabras, candles, the couple's throne and signs with your names: the room takes on your colours."
+      },
+      {
+        "id": "location",
+        "name": "Equipment hire",
+        "text": "Chairs, linen, gold tableware, candelabras, arches and stands, to hire on their own or with our services."
+      }
+    ],
+    "more": "Discover"
+  },
+  "traiteur": {
+    "eyebrow": "001 — Catering",
+    "title": "A generous table, designed like a set",
+    "text": "Our buffets are seen before they are tasted: carved fruit, dishes under silver cloches, a veil of smoke as the platters arrive. Oriental and Southern cooking, savoury and sweet, we build the menu with you around your guests and the way you like to entertain.",
+    "specialties": [
+      {
+        "name": "Fruit buffets",
+        "text": "Fresh fruit, carved and cascading, for a colourful finale."
+      },
+      {
+        "name": "Savoury buffets",
+        "text": "Composed salads, seafood pastillas, pastries, mini pizzas and pasta."
+      },
+      {
+        "name": "Verrines & petits fours",
+        "text": "Verrines, tartlets, macarons, brownies and sweet bites."
+      },
+      {
+        "name": "Tiered & celebration cakes",
+        "text": "Tiered cakes and celebration cakes, brought out at the high point of the evening."
+      },
+      {
+        "name": "Dishes served at the table",
+        "text": "Chicken with olives and almonds, tagines and slow-cooked dishes served under cloches."
+      },
+      {
+        "name": "Waiting staff",
+        "text": "A team on the floor for table service, the arrival of the platters and the buffet."
+      }
+    ],
+    "service": {
+      "script": "Service",
+      "title": "Service, on the floor",
+      "text": "Our waiters carry the dishes to the tables, under silver cloches or in a cloud of smoke, and look after the buffet until the last guest."
+    },
+    "sweet": {
+      "title": "The sweet table",
+      "text": "Red berry brownies, macarons, verrines, tartlets: the dessert buffet is laid out like a shop window."
+    },
+    "formulas": {
+      "eyebrow": "Packages",
+      "title": "Three ways to entertain",
+      "text": "Each package adapts to your number of guests and your menu. Your quote is tailored to your event.",
+      "from": "From",
+      "perPerson": "€ / guest",
+      "onQuote": "On quotation",
+      "minGuests": "from {n} guests",
+      "choose": "Choose this package",
+      "items": {
+        "cocktail": {
+          "name": "Cocktail",
+          "text": "For a reception drink, an engagement or a standing party.",
+          "includes": [
+            "Verrines and savoury bites",
+            "Petits fours and sweets",
+            "Cocktails and cold drinks"
+          ]
+        },
+        "buffet": {
+          "name": "Buffet",
+          "text": "A grand buffet, savoury and sweet, where everyone helps themselves.",
+          "includes": [
+            "Composed salads and hot dishes",
+            "Carved fruit buffet",
+            "Desserts and tiered cake"
+          ]
+        },
+        "servi": {
+          "name": "Served dinner",
+          "text": "The full meal served at the table by our waiters, from starter to dessert.",
+          "includes": [
+            "Starter, main and dessert",
+            "Table service by our team",
+            "Dishes presented under cloches"
+          ]
+        }
+      }
+    }
+  },
+  "detail": {
+    "eyebrow": "Sud Events",
+    "title": "Every detail counts",
+    "text": "A folded napkin, a candle, gold cutlery, a crystal glass: it is the whole that makes the table."
+  },
+  "decoration": {
+    "eyebrow": "002 — Decoration",
+    "title": "A room in your image, from floor to ceiling",
+    "text": "We dress the whole reception room: draping, white flower arches, centrepieces, gold or crystal candelabras, candles and light. Oriental, mixed or more classic, we start from your colours and your story.",
+    "oriental": "Oriental and mixed weddings: the couple's throne, entrance carpet, silver cloches, and lighting designed for every big moment of the night.",
+    "items": [
+      {
+        "name": "Flower arches",
+        "text": "White flower arches for the entrance, the stage or the ceremony."
+      },
+      {
+        "name": "Centrepieces",
+        "text": "Tall vases and white roses, floating candles, mirrors and gold stands."
+      },
+      {
+        "name": "Candelabras & candles",
+        "text": "Gold candelabras, crystal candelabras and rows of candles."
+      },
+      {
+        "name": "The couple's throne & sofa",
+        "text": "Tufted white and gold sofa, bridal chairs, floral backdrop."
+      },
+      {
+        "name": "Personalised signs & mirrors",
+        "text": "Welcome sign and mirrors with your names and wedding date."
+      },
+      {
+        "name": "Lighting",
+        "text": "Ambient light and candles to bring the room to life as night falls."
+      }
+    ]
+  },
+  "rental": {
+    "eyebrow": "003 — Equipment hire",
+    "title": "The pieces from our weddings, to hire",
+    "text": "The equipment you see in our weddings can be hired on its own or with our catering and decoration. Add items to your request: they appear in the quote form.",
+    "filterLabel": "Categories",
+    "all": "All",
+    "cats": {
+      "mobilier": "Furniture",
+      "lumiere": "Lighting",
+      "floral": "Florals",
+      "table": "Tableware",
+      "service": "Service & buffet"
+    },
+    "units": {
+      "piece": "per item",
+      "table": "per table",
+      "guest": "per guest",
+      "set": "per set"
+    },
+    "from": "From",
+    "onRequest": "Price on request",
+    "add": "Add to my request",
+    "added": "In your request",
+    "remove": "Remove",
+    "qty": "Quantity",
+    "decrease": "Remove one",
+    "increase": "Add one",
+    "barOne": "{n} item in your request",
+    "barMany": "{n} items in your request",
+    "barCta": "Finish",
+    "note": "Quantities are indicative: we confirm availability for your date.",
+    "items": {
+      "trone": {
+        "name": "Bridal throne & sofa",
+        "text": "Tufted white sofa with a carved gold frame."
+      },
+      "chiavari": {
+        "name": "Crystal Chiavari chairs",
+        "text": "Clear chairs, light and elegant."
+      },
+      "tapis": {
+        "name": "Oriental entrance carpet",
+        "text": "Embroidered red carpet and gold posts for the couple's entrance."
+      },
+      "chandelier-dore": {
+        "name": "Gold candelabra",
+        "text": "Tall gold candelabra with several arms."
+      },
+      "candelabre-cristal": {
+        "name": "Crystal candelabra",
+        "text": "Clear five-candle candelabra for the head tables."
+      },
+      "photophore": {
+        "name": "Floating candle holder",
+        "text": "Glass cylinder and floating candle on a round mirror."
+      },
+      "arche": {
+        "name": "White flower arch",
+        "text": "Flower arch for the entrance, the ceremony or photos."
+      },
+      "centre-table": {
+        "name": "White rose centrepiece",
+        "text": "Tall vase and a bouquet of white roses."
+      },
+      "support-dore": {
+        "name": "Gold geometric stand",
+        "text": "Gold frame for flowers or a floating candle."
+      },
+      "art-table": {
+        "name": "Gold tableware",
+        "text": "White plates, gold cutlery, cut crystal glasses."
+      },
+      "nappage": {
+        "name": "Linen & covers",
+        "text": "White tablecloths and covers for round tables."
+      },
+      "cloche": {
+        "name": "Silver serving cloche",
+        "text": "Engraved dish and cloche for Oriental-style service."
+      },
+      "presentoirs": {
+        "name": "Buffet stands",
+        "text": "Frosted acrylic stands for verrines and sweets."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Our weddings",
+    "title": "Our weddings, as they were",
+    "text": "Images taken on the day, in the venues and estates where we set the tables.",
+    "filterLabel": "Filter our weddings",
+    "filters": {
+      "all": "All",
+      "traiteur": "Catering",
+      "decoration": "Decoration",
+      "salle": "Venues"
+    },
+    "open": "Enlarge",
+    "close": "Close",
+    "prev": "Previous image",
+    "next": "Next image",
+    "instagram": "All our weddings on Instagram"
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "In the couples' words",
+    "source": "Review from a couple, shared on our Instagram",
+    "original": "Original review, in French",
+    "translation": "A huge thank you to the Sud Event team for turning our wedding into a real fairy tale! The decoration was absolutely sublime, every detail perfectly thought out and carried out. […] Your professionalism is remarkable: responsive, available, attentive, and above all incredibly accommodating. […] You are much more than a simple supplier, you are true artists […] I recommend Sud Event with my eyes closed."
+  },
+  "partners": {
+    "eyebrow": "They work with us",
+    "title": "Our partners",
+    "text": "Suppliers we often meet at our weddings, to complete your day.",
+    "roles": {
+      "dj": "DJ",
+      "negafa": "Negafa, Oriental bridal outfits"
+    }
+  },
+  "zone": {
+    "eyebrow": "Where we work",
+    "title": "Across the South, from Provence to Hérault",
+    "text": "We cater and decorate weddings and events in the Vaucluse, Bouches-du-Rhône and Hérault, in reception halls, estates or outdoors. Your venue is elsewhere? Ask us.",
+    "cities": "Cities"
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Good to know",
+    "items": [
+      {
+        "q": "Do you work in my town?",
+        "a": "We work in the Vaucluse (84), Bouches-du-Rhône (13) and Hérault (34): Avignon, Carpentras, Orange, Marseille, Aix-en-Provence, Arles, Montpellier, Béziers and the surrounding areas. For another venue, just ask."
+      },
+      {
+        "q": "Can we book catering and decoration together?",
+        "a": "Yes, it is our favourite way to work: one team for the food, the service and the decoration, with a single quote. You can also book just one of the two."
+      },
+      {
+        "q": "Can we hire equipment without a service?",
+        "a": "Yes. Chairs, linen, tableware, candelabras, arches and stands can be hired on their own. Add items to your request from our hire catalogue."
+      },
+      {
+        "q": "Do you do Oriental weddings?",
+        "a": "Yes, many of our weddings are Oriental or mixed: dishes served under cloches, fruit buffets, the couple's throne, entrance carpet. We build the menu and the decoration with you."
+      },
+      {
+        "q": "How do I get a quote?",
+        "a": "Fill in the quote form: date, venue, number of guests and tables, the service you need. Your request reaches us on WhatsApp and we come back to you with a proposal."
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "Request a quote",
+    "title": "Tell us about your event",
+    "text": "A few details are enough to prepare your quote: the date, the venue, the number of tables to decorate and the service you need. Your request reaches us directly on WhatsApp.",
+    "direct": "Prefer to write to us directly?",
+    "call": "Call",
+    "steps": {
+      "event": "Your event",
+      "service": "Your service",
+      "contact": "Your details"
+    },
+    "fields": {
+      "eventType": "Type of event",
+      "eventTypes": {
+        "wedding": "Wedding",
+        "engagement": "Engagement",
+        "henna": "Henna night",
+        "birthday": "Birthday",
+        "corporate": "Corporate",
+        "other": "Other"
+      },
+      "date": "Event date",
+      "dateBooked": "This date is already booked with us. Send your request anyway: we will tell you what is still possible.",
+      "venue": "Venue",
+      "venuePlaceholder": "Hall, estate or town…",
+      "guests": "Number of guests",
+      "tables": "Number of tables to decorate",
+      "service": "Service needed",
+      "services": {
+        "deco": "Decoration",
+        "traiteur": "Catering",
+        "both": "Both",
+        "location": "Hire only"
+      },
+      "formula": "Catering package",
+      "formulaNone": "To be decided together",
+      "items": "Hire items",
+      "itemsEmpty": "No items yet.",
+      "itemsBrowse": "Browse the catalogue",
+      "budget": "Indicative budget",
+      "optional": "optional",
+      "budgets": [
+        "Under €3,000",
+        "€3,000 to €6,000",
+        "€6,000 to €10,000",
+        "Over €10,000",
+        "Not sure yet"
+      ],
+      "budgetNone": "Not specified",
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Message",
+      "messagePlaceholder": "Your colours, your wishes, how the evening will unfold…"
+    },
+    "required": "Required field",
+    "invalidPhone": "Invalid phone number",
+    "invalidEmail": "Invalid email address",
+    "submit": "Send my request on WhatsApp",
+    "sending": "Preparing…",
+    "hint": "WhatsApp opens with a summary of your request: all you need to do is press Send.",
+    "consent": "Your details are only used to reply to you and prepare your quote.",
+    "success": {
+      "thanks": "Thank you",
+      "title": "Your request is ready",
+      "text": "WhatsApp has opened with a summary of your request. If nothing opened, use the button below.",
+      "again": "Open WhatsApp",
+      "reset": "Make another request"
+    },
+    "message": {
+      "title": "Sud Events quote request",
+      "event": "Event",
+      "date": "Date",
+      "venue": "Venue",
+      "guests": "Guests",
+      "tables": "Tables to decorate",
+      "service": "Service",
+      "formula": "Package",
+      "items": "Hire",
+      "budget": "Budget",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "notes": "Message",
+      "ref": "Ref.",
+      "closing": "Thank you, we will get back to you very soon."
+    }
+  },
+  "email": {
+    "subjectBusiness": "New quote request",
+    "subjectClient": "Your Sud Events quote request",
+    "intro": "Hello,\n\nWe have received your quote request, here is a summary. We will get back to you very soon.\n\nThe Sud Events team"
+  },
+  "whatsapp": {
+    "float": "Message Sud Events on WhatsApp",
+    "hello": "Hello Sud Events, I would like some information about an event."
+  },
+  "footer": {
+    "tagline": "Catering, decoration and equipment hire for weddings and events in the South of France.",
+    "contact": "Contact",
+    "follow": "Follow",
+    "zones": "Areas",
+    "legal": "Legal notice",
+    "rights": "All rights reserved",
+    "photos": "Photos and videos: Sud Events"
+  },
+  "legal": {
+    "title": "Legal notice",
+    "sections": [
+      {
+        "title": "Publisher",
+        "text": "Sud Events, catering, decoration and equipment hire for weddings and events. Phone and WhatsApp: +33 7 83 67 90 92. Instagram: @sud_events."
+      },
+      {
+        "title": "Hosting",
+        "text": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States."
+      },
+      {
+        "title": "Personal data",
+        "text": "The details sent through the quote form are only used to answer your request. They reach us by WhatsApp and, where applicable, by email. They are never sold or used for any other purpose. You can ask for them to be deleted at any time by phone or WhatsApp."
+      },
+      {
+        "title": "Photos",
+        "text": "The photos and videos on this site come from Sud Events' own weddings. Reproduction without permission is prohibited."
+      }
+    ],
+    "back": "Back to home"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page does not exist or has moved.",
+    "back": "Back to home"
+  },
+  "alt": {
+    "trone-dore-bougies": "White and gold bridal sofa in front of draped curtains and candles",
+    "salle-chandeliers-dores": "Reception room set with tall gold candelabras",
+    "chandelier-cristal-provence": "Round outdoor table with a crystal candelabra in Provence",
+    "poulet-olives-amandes": "Chicken with olives and almonds, an Oriental dish served at the table",
+    "buffet-fruits": "Fresh fruit buffet: bananas, oranges, apples and a yule log",
+    "poulets-rotis": "Roast chickens with olives on white plates",
+    "buffet-salades-composees": "Composed salad buffet on gold stands",
+    "tajine-poulet-amandes": "Chicken tagine with almonds and olives",
+    "buffet-salades-pates": "Pasta salad, carrot and pastry buffet",
+    "buffet-piscine": "Sweet buffet set by a swimming pool",
+    "cocktails-bleus": "Blue mint cocktails on frosted acrylic stands",
+    "verrines-menthe": "Fresh mint verrines lined up on the buffet",
+    "mini-pizzas": "Platter of mini pizzas and pastries",
+    "brownies-framboises": "Brownies with raspberries and blueberries",
+    "macarons-piscine": "Macarons and blue verrines by the pool",
+    "gateau-fruits-rouges": "Red berry cake surrounded by cups of fruit",
+    "verrines-panna-cotta": "Creamy pineapple verrines on stands",
+    "mignardises-tartelettes": "Fruit tartlets and petits fours on the buffet",
+    "buffet-patisseries": "Pastry buffet with brownies and tartlets",
+    "chaises-maries-arche-roses": "White and gold bridal chairs under an arch of roses",
+    "bougie-flottante-centre-table": "Centrepiece with a floating candle on a round mirror",
+    "roses-blanches-bougies": "Wreath of white roses and a candle on the head table",
+    "centre-table-roses-hautes": "Tall white rose centrepiece in a set room",
+    "vases-dores-fleurs": "Gold vases and rose bouquets on a set table",
+    "bougies-salle-vases-dores": "Table with gold vases, candles at the back of the room",
+    "support-dore-bougie-flottante": "Gold geometric stand with flowers and a floating candle",
+    "table-dressee-or": "Round table set with gold cutlery and candles",
+    "arche-fleurs-entree": "White flower arch at the entrance of the hall",
+    "chaises-trone-mariage-plein-air": "Outdoor table under a rose bouquet, countryside view",
+    "table-roses-candelabres": "Table set with white roses and gold candelabras",
+    "table-roses-arches-lumineuses": "Round table with white roses, gold cutlery, bridal sofa and illuminated arches",
+    "salle-voilages-lustres": "Room under white draping and chandeliers, tables set",
+    "salle-tables-rondes": "Round tables dressed in white with crystal chairs",
+    "salle-dressee-vases-dores": "Room set with gold vases and clear chairs",
+    "salle-candelabres-dores": "Reception room with gold candelabras and crystal chairs",
+    "tapis-rouge-entree": "Embroidered red carpet and gold posts at the entrance",
+    "reception-plein-air-provence": "Outdoor reception with round tables and a flower arch",
+    "table-piscine-vue": "Flowered head table by the pool, overlooking the hills",
+    "tables-dressees-fleurs": "Tables set with white roses and gold cutlery",
+    "serveuse-plateau-fumee": "Waitress carrying a salad platter in a cloud of smoke",
+    "serveur-plateau-salle": "Waiter carrying a salad platter through the room",
+    "serveuse-plateau-salades": "Waitress bringing the platters to the tables",
+    "service-cloches-jardin": "Sud Events team presenting dishes under cloches in the garden",
+    "serveuse-poulet-piscine": "Poolside buffet with a Sud Events logo table cover",
+    "etincelles-fumee": "The couple's entrance with spark fountains and low smoke",
+    "piste-voilages-lumieres": "Dance floor under a ceiling of draping and string lights",
+    "soiree-jardin": "Evening by the pool, table with the Sud Events logo",
+    "trone-canape-dore": "Tufted white bridal sofa with a carved gold frame",
+    "chandelier-dore-5-branches": "Tall gold candelabra on a set table",
+    "chandelier-cristal": "Crystal candelabra on a round outdoor table",
+    "arche-fleurs-blanches": "White flower arch",
+    "centre-table-vase-haut": "Centrepiece, tall vase and white roses",
+    "cloche-argent": "Pastillas served under silver cloches",
+    "presentoirs-plexi": "Frosted acrylic stands filled with verrines",
+    "photophore-bougie-flottante": "Glass holder with a floating candle",
+    "art-de-la-table-dore": "White plates and gold cutlery on a round table",
+    "tapis-rouge": "Embroidered red entrance carpet",
+    "chaises-chiavari-cristal": "Crystal Chiavari chair beside a dressed table",
+    "support-geometrique-dore": "Gold geometric stand filled with roses",
+    "pastillas-cloches-argent": "Seafood pastillas under engraved silver cloches",
+    "pastilla-fruits-de-mer": "Seafood pastilla topped with prawns"
+  }
+}

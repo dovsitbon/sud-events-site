@@ -1,0 +1,18 @@
+{
+  "name": "Sud Events",
+  "url": "https://sud-events.vercel.app",
+  "phone": "07 83 67 90 92",
+  "phoneIntl": "+33 7 83 67 90 92",
+  "whatsapp": "33783679092",
+  "instagram": "https://www.instagram.com/sud_events/",
+  "instagramHandle": "@sud_events",
+  "email": null,
+  "manager": null,
+  "city": null,
+  "siret": null,
+  "areas": [
+    { "code": "84", "name": "Vaucluse", "cities": ["Avignon", "Carpentras", "Orange", "Cavaillon", "L'Isle-sur-la-Sorgue", "Pertuis", "Apt"] },
+    { "code": "13", "name": "Bouches-du-Rhône", "cities": ["Marseille", "Aix-en-Provence", "Arles", "Salon-de-Provence", "Aubagne", "Martigues", "Istres"] },
+    { "code": "34", "name": "Hérault", "cities": ["Montpellier", "Béziers", "Sète", "Lunel", "Agde", "Lattes"] }
+  ]
+}

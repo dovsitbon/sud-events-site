@@ -1,0 +1,8 @@
+{
+  "_note": "Prix « à partir de » en euros par personne. Laisser null tant que Sud Events ne les a pas confirmés : le site affiche alors « Sur devis ».",
+  "formules": [
+    { "id": "cocktail", "priceFrom": null, "minGuests": null },
+    { "id": "buffet", "priceFrom": null, "minGuests": null },
+    { "id": "servi", "priceFrom": null, "minGuests": null }
+  ]
+}

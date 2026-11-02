@@ -1,0 +1,16 @@
+# Sud Events
+
+> Traiteur, décorateur et loueur de matériel pour mariages et événements dans le Sud de la France : Vaucluse (84), Bouches-du-Rhône (13) et Hérault (34). Mariages orientaux et mixtes.
+
+- Traiteur : buffets de fruits sculptés, buffets salés, pastillas aux fruits de mer, verrines et mignardises, pièces montées, plats servis à table sous cloche, service avec serveurs. Formules cocktail, buffet et repas servi, sur devis.
+- Décoration : arches de fleurs blanches, centres de table, chandeliers dorés et en cristal, bougies, trône et canapé des mariés, panneaux et miroirs personnalisés, éclairage.
+- Location de matériel : trône des mariés, chaises Chiavari cristal, tapis d'entrée, chandeliers, photophores, arches, centres de table, art de la table doré, nappage, cloches de service, présentoirs de buffet.
+- Villes : Avignon, Carpentras, Orange, Cavaillon, Marseille, Aix-en-Provence, Arles, Salon-de-Provence, Montpellier, Béziers, Sète.
+- Contact : WhatsApp et téléphone +33 7 83 67 90 92 ; Instagram https://www.instagram.com/sud_events/
+
+## Pages
+
+- [Accueil (français)](https://sud-events.vercel.app/fr)
+- [English](https://sud-events.vercel.app/en)
+- [العربية](https://sud-events.vercel.app/ar)
+- [Demande de devis](https://sud-events.vercel.app/fr#devis)
